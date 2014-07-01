@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/Adapters/StationsAdapter.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/Utilities/Tools.java" />
+    </issue>
+    <issue id="UseSparseArrays" severity="ignore" />
+</lint>

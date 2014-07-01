@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Hodico</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu_page">MenuPage</string>
+    <string name="News">http://www.hodico.com/mAdmin/news_getdata.php</string>
+    <string name="Tips">http://www.hodico.com/mAdmin/tips_getdata.php</string>
+    <string name="Website">http://www.hodico.com/mAdmin/</string>
+    <string name="title_activity_news_page">NewsPage</string>
+    <string name="title_activity_info_page">InfoPage</string>
+    <string name="title_activity_comments_page">CommentsPage</string>
+    <string name="title_activity_products_page">ProductsPage</string>
+    <string name="Products">http://www.hodico.com/mAdmin/products_getdata.php</string>
+    <string name="Prices">http://www.hodico.com/mAdmin/prices_getdata.php</string>
+    <string name="PricesDate">http://www.hodico.com/mAdmin/prices_getdata.php?date=1</string>
+    <string name="PricesTrip">http://www.hodico.com/mAdmin/prices_getdata.php?trip=1</string>
+    <string name="PricesDel">http://www.hodico.com/mAdmin/prices_getdata.php?delivered=true</string>
+    <string name="Stations">http://www.hodico.com/mAdmin/stations_getdata.php</string>
+    <string name="Orders">http://www.hodico.com/mAdmin/orders_getdata.php</string>
+    <string name="Feedback">http://www.hodico.com/mAdmin/feedback_getdata.php</string>
+    <string name="Tax">http://www.hodico.com/mAdmin/tax_getdata.php</string>
+    <string name="TaxCarHorsePower">http://www.hodico.com/mAdmin/tax_getdata.php?car_horsepower=true</string>
+    <string name="TaxCarYearMake">http://www.hodico.com/mAdmin/tax_getdata.php?car_yearmake=true</string>
+    <string name="TaxCarType">http://www.hodico.com/mAdmin/tax_getdata.php?car_types=true</string>
+    <string name="TaxCarSymbol">http://www.hodico.com/mAdmin/tax_getdata.php?car_symbol=true</string>
+    <string name="title_activity_stations_page">StationsPage</string>
+    <string name="MapAPIKey">AIzaSyC5fvPj83jNA6oUgL11vPgB0sbFuOJZNZU</string>
+    <string name="title_activity_search_stations_fragment">SearchStationsFragment</string>
+    <string name="title_activity_car_page">CarPage</string>
+    <string name="title_activity_tax_fragment">TaxFragment</string>
+    <string name="title_activity_oil_fragement">OilFragement</string>
+    <string name="title_activity_trip_cost_fragment">TripCostFragment</string>
+    <string name="search_stations_hint">Search stations</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_prices_page">PricesPage</string>
+
+</resources>
