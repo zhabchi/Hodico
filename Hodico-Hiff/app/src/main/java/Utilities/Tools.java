@@ -35,11 +35,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.LayoutParams;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.app.SherlockListActivity;
 import com.ir.hodicohiff.R;
 
 public class Tools {
@@ -48,15 +43,15 @@ public class Tools {
 	int counter;
 	private static int dialogOpened = 0;
 	private ProgressDialog pdialog;
-	private SherlockActivity activity;
+	/*private SherlockActivity activity;
 	private SherlockListActivity listactivity;
-	private SherlockFragmentActivity fragmentactivity;
+	private SherlockFragmentActivity fragmentactivity;*/
 
 	public Tools(Context context) {
 		this.context = context;
 	}
 
-	public Tools(SherlockActivity activity, Context context) {
+	/*public Tools(SherlockActivity activity, Context context) {
 		this.activity = activity;
 		this.context = context;
 	}
@@ -69,7 +64,7 @@ public class Tools {
 	public Tools(SherlockFragmentActivity fragmentactivity, Context context) {
 		this.fragmentactivity = fragmentactivity;
 		this.context = context;
-	}
+	}*/
 
 	public void displayToast(String message, int duration) {
 		Toast.makeText(context, message, duration).show();
@@ -197,12 +192,13 @@ public class Tools {
 	public String getPhoneNumber() {
 		TelephonyManager tMgr = (TelephonyManager) context
 				.getSystemService(Context.TELEPHONY_SERVICE);
-		String mPhoneNumber = tMgr.getLine1Number();
+		//String mPhoneNumber = tMgr.getLine1Number();
+		String mPhoneNumber = "";
 		return mPhoneNumber;
 	}
 
 	public void setHeader(int drawable) {
-		ActionBar actionBar = null;
+		/*ActionBar actionBar = null;
 		View actionBarView = null;
 		if (activity != null) {
 			actionBar = activity.getSupportActionBar();
@@ -216,17 +212,17 @@ public class Tools {
 			actionBar = fragmentactivity.getSupportActionBar();
 			actionBarView = fragmentactivity.getLayoutInflater().inflate(
 					R.layout.actionbar3, null);
-		}
-		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+		}*/
+		/*actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
 		actionBar.setDisplayShowTitleEnabled(false);
-		actionBar.setDisplayShowHomeEnabled(false);
+		actionBar.setDisplayShowHomeEnabled(false);*/
 
-		ImageView header = (ImageView) actionBarView.findViewById(R.id.header);
-		header.setBackgroundResource(drawable);
-		ActionBar.LayoutParams params = new ActionBar.LayoutParams(
+		/*ImageView header = (ImageView) actionBarView.findViewById(R.id.header);
+		header.setBackgroundResource(drawable);*/
+		/*ActionBar.LayoutParams params = new ActionBar.LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-		actionBar.setCustomView(actionBarView, params);
+		actionBar.setCustomView(actionBarView, params);*/
 	}
 
 	public void setReminder(String date, int days) {

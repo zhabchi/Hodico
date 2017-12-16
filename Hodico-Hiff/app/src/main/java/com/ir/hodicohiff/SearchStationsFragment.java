@@ -1,6 +1,8 @@
 package com.ir.hodicohiff;
 
 import Adapters.StationsAdapter;
+
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -13,9 +15,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
 
-public class SearchStationsFragment extends SherlockFragment {
+public class SearchStationsFragment extends Activity {
 
 	private ListView lv;
 	private EditText inputSearch;
@@ -23,7 +24,7 @@ public class SearchStationsFragment extends SherlockFragment {
 
 	StationsAdapter adapter;
 
-	@Override
+	//@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.activity_search_stations_fragment,
@@ -36,7 +37,7 @@ public class SearchStationsFragment extends SherlockFragment {
 		tvurl.setLinkTextColor(Color.WHITE);
 
 		// Adding items to listview
-		adapter = new StationsAdapter(getActivity(), StationsPage.stations);
+		adapter = new StationsAdapter(this, StationsPage.stations);
 		lv.setAdapter(adapter);
 
 		inputSearch.addTextChangedListener(new TextWatcher() {
@@ -68,7 +69,7 @@ public class SearchStationsFragment extends SherlockFragment {
 		return v;
 	}
 
-	@Override
+	/*@Override
 	public void onResume() {
 		super.onResume();
 	}
@@ -81,5 +82,5 @@ public class SearchStationsFragment extends SherlockFragment {
 	@Override
 	public void onLowMemory() {
 		super.onLowMemory();
-	}
+	}*/
 }

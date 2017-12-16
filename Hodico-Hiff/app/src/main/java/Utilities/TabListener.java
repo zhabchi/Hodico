@@ -3,11 +3,11 @@ package Utilities;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.ActionBar.Tab;
 import com.ir.hodicohiff.R;
 
-public class TabListener implements ActionBar.TabListener {
+/*public class TabListener implements ActionBar.TabListener {
 	public Fragment fragment;
 
 	public TabListener(Fragment fragment) {
@@ -32,4 +32,4 @@ public class TabListener implements ActionBar.TabListener {
 
 	}
 
-}
+}*/

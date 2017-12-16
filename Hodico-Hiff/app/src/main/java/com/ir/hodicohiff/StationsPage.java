@@ -9,9 +9,11 @@ import org.json.JSONObject;
 
 import Classes.Station;
 import Utilities.OnTaskCompleted;
-import Utilities.TabListener;
+//import Utilities.TabListener;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -19,11 +21,11 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
+//import com.actionbarsherlock.app.ActionBar;
+///import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.android.volley.VolleyError;
 
-public class StationsPage extends SherlockFragmentActivity {
+public class StationsPage extends Activity {
 
 	public static ArrayList<Station> stations;
 	private WebHttpRequest mWeb;
@@ -32,7 +34,7 @@ public class StationsPage extends SherlockFragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mTools = new Tools(StationsPage.this, this);
+		mTools = new Tools(StationsPage.this);
 		mTools.setHeader(R.drawable.ma7atatakhd);
 		setContentView(R.layout.activity_stations_page);
 
@@ -90,7 +92,7 @@ public class StationsPage extends SherlockFragmentActivity {
 								stations.add(s);
 
 							}
-							createTabs();
+							//createTabs();
 							mTools.hideLoadingDialog();
 						} catch (JSONException e) {
 							e.printStackTrace();
@@ -115,7 +117,7 @@ public class StationsPage extends SherlockFragmentActivity {
 		finish();
 	}
 
-	public void createTabs() {
+/*	public void createTabs() {
 
 		// ActionBar gets initiated
 		ActionBar actionbar = getSupportActionBar();
@@ -156,5 +158,5 @@ public class StationsPage extends SherlockFragmentActivity {
 		actionbar.addTab(MapTab);
 		actionbar.addTab(StationsTab);
 	}
-
+*/
 }

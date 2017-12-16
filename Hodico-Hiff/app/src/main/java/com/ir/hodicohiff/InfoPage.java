@@ -1,13 +1,16 @@
 package com.ir.hodicohiff;
 
 import Utilities.Tools;
+
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.util.Linkify;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.app.SherlockActivity;
 
-public class InfoPage extends SherlockActivity {
+//public class InfoPage extends SherlockActivity {
+public class InfoPage extends Activity {
 
 	TextView tvT1, tvT2, tvT3, tvT4, tvE, tvM;
 
@@ -16,7 +19,7 @@ public class InfoPage extends SherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mTools = new Tools(InfoPage.this, this);
+		mTools = new Tools(InfoPage.this);
 		mTools.setHeader(R.drawable.ettisalhd);
 		setContentView(R.layout.activity_info_page);
 

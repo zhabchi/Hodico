@@ -14,6 +14,8 @@ import Classes.Product;
 import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -28,11 +30,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockActivity;
 import com.android.volley.VolleyError;
-import com.google.android.gms.internal.gg;
 
-public class ProductsPage extends SherlockActivity {
+public class ProductsPage extends Activity {
 
 	private WebHttpRequest mWeb;
 	private Tools mTools;
@@ -48,7 +48,7 @@ public class ProductsPage extends SherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mTools = new Tools(ProductsPage.this, this);
+		mTools = new Tools(ProductsPage.this);
 		mTools.setHeader(R.drawable.wasselhd);
 		setContentView(R.layout.activity_products_page);
 

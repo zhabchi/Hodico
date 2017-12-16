@@ -28,7 +28,7 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
-import com.google.android.gcm.GCMRegistrar;
+//import com.google.android.gcm.GCMRegistrar;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -61,7 +61,7 @@ public class FirstScreen extends Activity {
 
 		mTools = new Tools(this);
 
-		RegisterGCM();
+		//RegisterGCM();
 
 		mainframe = (FrameLayout) findViewById(R.id.MainFrame);
 
@@ -178,7 +178,7 @@ public class FirstScreen extends Activity {
 		mShaker.setOnShakeListener(null);
 	}
 
-	public void RegisterGCM() {
+/*	public void RegisterGCM() {
 
 		email = mTools.getPrimaryEmail();
 		name = mTools.getDeviceID();
@@ -230,7 +230,7 @@ public class FirstScreen extends Activity {
 			}
 		}
 	}
-
+*/
 	/**
 	 * Receiving push messages
 	 * */

@@ -12,6 +12,8 @@ import Classes.Station;
 import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.util.Linkify;
@@ -24,10 +26,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.app.SherlockActivity;
 import com.android.volley.VolleyError;
 
-public class CommentsPage extends SherlockActivity {
+public class CommentsPage extends Activity {
 
 	public static ArrayList<Station> stations;
 	private WebHttpRequest mWeb;
@@ -46,7 +48,7 @@ public class CommentsPage extends SherlockActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// requestWindowFeature(Window.FEATURE_NO_TITLE);
-		mTools = new Tools(CommentsPage.this, this);
+		mTools = new Tools(CommentsPage.this);
 		mTools.setHeader(R.drawable.ta3li2akhd);
 		setContentView(R.layout.activity_comments_page);
 

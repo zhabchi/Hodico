@@ -3,6 +3,8 @@ package com.ir.hodicohiff;
 import java.util.Calendar;
 
 import Utilities.Tools;
+
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +16,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragment;
 
-public class OilFragment extends SherlockFragment {
+
+public class OilFragment extends Activity {
 
 	public static TextView txtDate;
 	private Button btnChangeDate, btnSubmit;
@@ -30,13 +32,13 @@ public class OilFragment extends SherlockFragment {
 
 	Tools mTools;
 
-	@Override
+	//@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.activity_oil_fragement, container,
 				false);
 
-		mTools = new Tools(getActivity());
+		mTools = new Tools(getApplicationContext());
 
 		etAvgKm = (EditText) v.findViewById(R.id.etAvgKmDay);
 		etAfter = (EditText) v.findViewById(R.id.etAfterKm);
@@ -67,7 +69,7 @@ public class OilFragment extends SherlockFragment {
 
 				mTools.hideSoftInput();
 				// On button click show datepicker dialog
-				getActivity().showDialog(DATE_PICKER_ID);
+				//getActivity().showDialog(DATE_PICKER_ID);
 
 			}
 
@@ -77,8 +79,8 @@ public class OilFragment extends SherlockFragment {
 
 			@Override
 			public void onClick(View v) {
-				getActivity().getWindow().setSoftInputMode(
-						WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+				//getActivity().getWindow().setSoftInputMode(
+				//		WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
 				if (!etAvgKm.getText().equals(null)
 						&& !etAvgKm.getText().toString().equals("")

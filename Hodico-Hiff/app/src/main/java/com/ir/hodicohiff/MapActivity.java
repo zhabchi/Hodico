@@ -24,8 +24,8 @@ public class MapActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_map);
 
-		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map))
-				.getMap();
+		map = null;//((MapFragment) getFragmentManager().findFragmentById(R.id.map))
+				//.getMap();
 
 		final CameraPosition Lebanon = new CameraPosition.Builder()
 				.target(new LatLng(33.8869, 35.5131)).zoom(12).build();

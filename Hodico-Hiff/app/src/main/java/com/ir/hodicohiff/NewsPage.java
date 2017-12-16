@@ -12,20 +12,20 @@ import Classes.News;
 import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.util.Linkify;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockListActivity;
+//import com.actionbarsherlock.app.SherlockListActivity;
 import com.android.volley.VolleyError;
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleListener;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
-public class NewsPage extends SherlockListActivity {
+
+//public class NewsPage extends SherlockListActivity {
+public class NewsPage extends Activity {
 
 	private WebHttpRequest mWeb;
 	private Tools mTools;
@@ -33,7 +33,7 @@ public class NewsPage extends SherlockListActivity {
 	private ArrayList<News> news;
 
 	private ListView actualListView;
-	private PullToRefreshListView mPullRefreshListView;
+	//private PullToRefreshListView mPullRefreshListView;
 	private TextView tvurl;
 
 	private boolean push = false;
@@ -42,7 +42,7 @@ public class NewsPage extends SherlockListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		mTools = new Tools(NewsPage.this, this);
+		mTools = new Tools(NewsPage.this);
 		mTools.setHeader(R.drawable.akhbarhd);
 		setContentView(R.layout.activity_news_page);
 
@@ -60,13 +60,13 @@ public class NewsPage extends SherlockListActivity {
 		adapter = (NewsAdapter) getLastNonConfigurationInstance();
 
 		// Pull To Refresh
-		mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
+		//mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
 
-		actualListView = mPullRefreshListView.getRefreshableView();
+		//actualListView = mPullRefreshListView.getRefreshableView();
 
 		registerForContextMenu(actualListView);
 
-		mPullRefreshListView
+		/*mPullRefreshListView
 				.setOnRefreshListener(new OnRefreshListener<ListView>() {
 					@Override
 					public void onRefresh(
@@ -83,7 +83,7 @@ public class NewsPage extends SherlockListActivity {
 
 					}
 				});
-
+*/
 		// Get Data
 		// mTools.showLoadingDialog();
 		mWeb = new WebHttpRequest(NewsPage.this, WebHttpRequest.WEB_NEWS,
@@ -96,7 +96,7 @@ public class NewsPage extends SherlockListActivity {
 								"Please connect to the internet",
 								android.R.string.ok, true);
 						mTools.hideLoadingDialog();
-						mPullRefreshListView.onRefreshComplete();
+						//mPullRefreshListView.onRefreshComplete();
 					}
 
 					@Override
@@ -133,7 +133,7 @@ public class NewsPage extends SherlockListActivity {
 							adapter = new NewsAdapter(NewsPage.this, news);
 							// setListAdapter(adapter);
 							actualListView.setAdapter(adapter);
-							mPullRefreshListView.onRefreshComplete();
+							//mPullRefreshListView.onRefreshComplete();
 							mTools.hideLoadingDialog();
 						} catch (JSONException e) {
 							// TODO Auto-generated catch block
@@ -150,15 +150,15 @@ public class NewsPage extends SherlockListActivity {
 
 		// Get Data at start
 		mTools.showLoadingDialog();
-		mPullRefreshListView.setRefreshing(true);
+		//mPullRefreshListView.setRefreshing(true);
 		mWeb.getJson();
 
 	}
 
-	@Override
-	public Object getLastNonConfigurationInstance() {
-		return (getListAdapter());
-	}
+	//@Override
+	//public Object getLastNonConfigurationInstance() {
+	//	return (getListAdapter());
+	//}
 
 	/*
 	 * @Override public void onBackPressed() { if (!push) { MenuPage.i =

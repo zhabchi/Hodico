@@ -10,9 +10,11 @@ import org.json.JSONObject;
 import Classes.Product;
 import Classes.StringWithTag;
 import Utilities.OnTaskCompleted;
-import Utilities.TabListener;
+
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
@@ -26,11 +28,9 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.android.volley.VolleyError;
 
-public class CarPage extends SherlockFragmentActivity {
+public class CarPage extends Activity {
 
 	private Tools mTools;
 	
@@ -53,7 +53,7 @@ public class CarPage extends SherlockFragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mTools = new Tools(CarPage.this, this);
+		mTools = new Tools(CarPage.this);
 		mTools.setHeader(R.drawable.sayaratakhd);
 		setContentView(R.layout.activity_car_page);
 		
@@ -99,7 +99,7 @@ public class CarPage extends SherlockFragmentActivity {
 							count++;
 							if (count == 5) {
 								mTools.hideLoadingDialog();
-								createTabs();
+								//createTabs();
 							}
 						} catch (JSONException e) {
 							e.printStackTrace();
@@ -151,7 +151,7 @@ public class CarPage extends SherlockFragmentActivity {
 							count++;
 							if (count == 5) {
 								mTools.hideLoadingDialog();
-								createTabs();
+//								createTabs();
 							}
 						} catch (JSONException e) {
 							e.printStackTrace();
@@ -203,7 +203,7 @@ public class CarPage extends SherlockFragmentActivity {
 							count++;
 							if (count == 5) {
 								mTools.hideLoadingDialog();
-								createTabs();
+								//createTabs();
 							}
 						} catch (JSONException e) {
 							e.printStackTrace();
@@ -255,7 +255,7 @@ public class CarPage extends SherlockFragmentActivity {
 							count++;
 							if (count == 5) {
 								mTools.hideLoadingDialog();
-								createTabs();
+								//createTabs();
 							}
 						} catch (JSONException e) {
 							e.printStackTrace();
@@ -310,7 +310,7 @@ public class CarPage extends SherlockFragmentActivity {
 							count++;
 							if (count == 5) {
 								mTools.hideLoadingDialog();
-								createTabs();
+								//createTabs();
 							}
 						} catch (JSONException e) {
 							// TODO Auto-generated catch block
@@ -334,7 +334,7 @@ public class CarPage extends SherlockFragmentActivity {
 
 	}
 
-	public void createTabs() {
+	/*public void createTabs() {
 
 		// ActionBar gets initiated
 		ActionBar actionbar = getSupportActionBar();
@@ -387,7 +387,7 @@ public class CarPage extends SherlockFragmentActivity {
 		actionbar.addTab(OilTab);
 		actionbar.addTab(TripTab);
 	}
-
+*/
 	@Override
 	public void onBackPressed() {
 		MenuPage.i = MenuPage.Menu.size();

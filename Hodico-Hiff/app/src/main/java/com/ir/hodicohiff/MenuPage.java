@@ -5,6 +5,8 @@ import java.util.Map;
 
 import Utilities.MenuAnimator;
 import Utilities.Tools;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -17,11 +19,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.LayoutParams;
-import com.actionbarsherlock.app.SherlockActivity;
+//import com.actionbarsherlock.app.ActionBar;
+//import com.actionbarsherlock.app.ActionBar.LayoutParams;
+//import com.actionbarsherlock.app.SherlockActivity;
 
-public class MenuPage extends SherlockActivity {
+public class MenuPage extends Activity {
 
 	private ImageView imgPoster1, imgPoster2, imgPoster3, imgPoster4,
 			imgPoster5, imgPoster6, imgPoster7;
@@ -43,18 +45,18 @@ public class MenuPage extends SherlockActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
-		ActionBar actionBar = getSupportActionBar();
-		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+//		ActionBar actionBar = getSupportActionBar();
+//		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
-		getSupportActionBar().setDisplayShowTitleEnabled(false);
-		getSupportActionBar().setDisplayShowHomeEnabled(false);
+//		getSupportActionBar().setDisplayShowTitleEnabled(false);
+//		getSupportActionBar().setDisplayShowHomeEnabled(false);
 
 		View actionBarView = getLayoutInflater().inflate(R.layout.actionbar3,
 				null);
 
-		ActionBar.LayoutParams params = new ActionBar.LayoutParams(
-				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-		actionBar.setCustomView(actionBarView, params);
+//		ActionBar.LayoutParams params = new ActionBar.LayoutParams(
+//				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+//		actionBar.setCustomView(actionBarView, params);
 		setContentView(R.layout.activity_menu_page);
 
 		tools = new Tools(this);

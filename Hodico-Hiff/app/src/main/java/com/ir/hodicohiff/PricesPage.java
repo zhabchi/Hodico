@@ -16,6 +16,8 @@ import Classes.Product;
 import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.util.Linkify;
@@ -24,15 +26,11 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockListActivity;
-import com.actionbarsherlock.view.Window;
-import com.android.volley.VolleyError;
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleListener;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
-public class PricesPage extends SherlockListActivity {
+import com.android.volley.VolleyError;
+
+
+public class PricesPage extends Activity {
 
 	private WebHttpRequest mWeb;
 	private WebHttpRequest mWeb2;
@@ -41,7 +39,7 @@ public class PricesPage extends SherlockListActivity {
 	private ArrayList<Product> products;
 
 	private ListView actualListView;
-	private PullToRefreshListView mPullRefreshListView;
+	//private PullToRefreshListView mPullRefreshListView;
 	private TextView tvurl;
 
 	private View mHeaderView;
@@ -54,7 +52,7 @@ public class PricesPage extends SherlockListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_prices_page);
 
 		if (getIntent().hasExtra("push")) {
@@ -70,9 +68,9 @@ public class PricesPage extends SherlockListActivity {
 		adapter = (PricesAdapter) getLastNonConfigurationInstance();
 
 		// Pull To Refresh
-		mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
+		//mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
 
-		actualListView = mPullRefreshListView.getRefreshableView();
+		//actualListView = mPullRefreshListView.getRefreshableView();
 		actualListView.setDividerHeight(0);
 
 		registerForContextMenu(actualListView);
@@ -85,7 +83,7 @@ public class PricesPage extends SherlockListActivity {
 		
 		actualListView.addFooterView(mFooterView);
 		
-		mPullRefreshListView
+		/*mPullRefreshListView
 				.setOnRefreshListener(new OnRefreshListener<ListView>() {
 					@Override
 					public void onRefresh(
@@ -101,7 +99,7 @@ public class PricesPage extends SherlockListActivity {
 					public void onLastItemVisible() {
 
 					}
-				});
+				});*/
 
 		mWeb = new WebHttpRequest(PricesPage.this, WebHttpRequest.WEB_PRICES,
 				new OnTaskCompleted() {
@@ -144,7 +142,7 @@ public class PricesPage extends SherlockListActivity {
 									products);
 							// setListAdapter(adapter);
 							actualListView.setAdapter(adapter);
-							mPullRefreshListView.onRefreshComplete();
+							//mPullRefreshListView.onRefreshComplete();
 							mTools.hideLoadingDialog();
 							actualListView.requestLayout();
 						} catch (JSONException e) {
@@ -190,7 +188,7 @@ public class PricesPage extends SherlockListActivity {
 							date = sdf.format(datep);
 							TextView txtDate = (TextView) mFooterView.findViewById(R.id.txtDate);
 							txtDate.setText(day + " " + date);
-							mPullRefreshListView.onRefreshComplete();
+							//mPullRefreshListView.onRefreshComplete();
 							mTools.hideLoadingDialog();
 							actualListView.requestLayout();
 						} catch (JSONException e) {
@@ -211,7 +209,7 @@ public class PricesPage extends SherlockListActivity {
 
 		// Get Data at start
 		mTools.showLoadingDialog();
-		mPullRefreshListView.setRefreshing(true);
+		//mPullRefreshListView.setRefreshing(true);
 		mWeb2.getJson();
 		mWeb.getJson();
 

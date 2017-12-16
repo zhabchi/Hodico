@@ -2,6 +2,8 @@ package com.ir.hodicohiff;
 
 import Classes.Station;
 import Utilities.GPSTracker;
+
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.actionbarsherlock.app.SherlockFragment;
+//import com.actionbarsherlock.app.SherlockFragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnCameraChangeListener;
@@ -22,7 +24,7 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class StationsMapFragment extends SherlockFragment {
+public class StationsMapFragment extends Activity {
 
 	private GoogleMap map;
 
@@ -33,7 +35,7 @@ public class StationsMapFragment extends SherlockFragment {
 	private MapView mapView;
 	private LatLngBounds.Builder builder;
 
-	@Override
+	//@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.activity_stations_map_fragment,
@@ -47,12 +49,12 @@ public class StationsMapFragment extends SherlockFragment {
 		mapView = (MapView) v.findViewById(R.id.map);
 		mapView.onCreate(savedInstanceState);
 
-		MapsInitializer.initialize(getActivity());
+		MapsInitializer.initialize(getApplicationContext());
 
 		// Gets to GoogleMap from the MapView and does initialization stuff
-		map = mapView.getMap();
+		map = null;//mapView.getMap();
 
-		gpsTracker = new GPSTracker(getActivity());
+		gpsTracker = new GPSTracker(getApplicationContext());
 
 		if (gpsTracker.canGetLocation()) {
 

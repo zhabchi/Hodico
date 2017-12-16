@@ -25,9 +25,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragment;
+//import com.actionbarsherlock.app.SherlockFragment;
 
-public class TripCostFragment extends SherlockFragment {
+public class TripCostFragment extends Activity {
 
 	private EditText etSource, etDestination, etAvgKm;
 	private TextView txtCost, txtLiters;
@@ -44,13 +44,13 @@ public class TripCostFragment extends SherlockFragment {
 	// private int RESULT_OK = 1;
 	// private int RESULT_CANCELED = 0;
 
-	@Override
+	//@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.activity_trip_cost_fragment,
 				container, false);
 
-		mTools = new Tools(getActivity());
+		mTools = new Tools(getApplicationContext());
 
 		btnFromMyLocation = (ImageButton) v.findViewById(R.id.FromMyLocation);
 		btnToMyLocation = (ImageButton) v.findViewById(R.id.ToMyLocation);
@@ -65,8 +65,7 @@ public class TripCostFragment extends SherlockFragment {
 		etAvgKm = (EditText) v.findViewById(R.id.etAvgKm);
 		spFuelTypes = (Spinner) v.findViewById(R.id.spFuelType);
 
-		ProductsAdapter dataAdapter = new ProductsAdapter(getActivity(),
-				CarPage.Products);
+		ProductsAdapter dataAdapter = new ProductsAdapter(this, CarPage.Products);
 		spFuelTypes.setAdapter(dataAdapter);
 
 		etSource.setOnTouchListener(new OnTouchListener() {
@@ -74,7 +73,7 @@ public class TripCostFragment extends SherlockFragment {
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_UP) {
-					Intent i = new Intent(getActivity(), MapActivity.class);
+					Intent i = new Intent(getApplicationContext(), MapActivity.class);
 					// i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 					etSource.setInputType(InputType.TYPE_NULL); // disable soft
 																// input
@@ -100,7 +99,7 @@ public class TripCostFragment extends SherlockFragment {
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_UP) {
-					Intent i = new Intent(getActivity(), MapActivity.class);
+					Intent i = new Intent(getApplicationContext(), MapActivity.class);
 					// i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 					etDestination.setInputType(InputType.TYPE_NULL); // disable
 																		// soft
@@ -123,7 +122,7 @@ public class TripCostFragment extends SherlockFragment {
 		 * startActivityForResult(i, 2); } });
 		 */
 
-		gpsTracker = new GPSTracker(getActivity());
+		gpsTracker = new GPSTracker(getApplicationContext());
 
 		btnFromMyLocation.setOnClickListener(new OnClickListener() {
 

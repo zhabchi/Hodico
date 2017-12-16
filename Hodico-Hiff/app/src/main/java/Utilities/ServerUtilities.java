@@ -17,7 +17,7 @@ import java.util.Random;
 import android.content.Context;
 import android.util.Log;
 
-import com.google.android.gcm.GCMRegistrar;
+
 
 public final class ServerUtilities {
 	private static final int MAX_ATTEMPTS = 5;
@@ -46,7 +46,7 @@ public final class ServerUtilities {
 			try {
 				//displayMessage(context, "");
 				post(serverUrl, params);
-				GCMRegistrar.setRegisteredOnServer(context, true);
+				//GCMRegistrar.setRegisteredOnServer(context, true);
 				String message = "";
 				//CommonUtilities.displayMessage(context, message);
 				return;
@@ -85,7 +85,7 @@ public final class ServerUtilities {
 		params.put("regId", regId);
 		try {
 			post(serverUrl, params);
-			GCMRegistrar.setRegisteredOnServer(context, false);
+			//GCMRegistrar.setRegisteredOnServer(context, false);
 			String message = "";
 			//CommonUtilities.displayMessage(context, message);
 		} catch (IOException e) {
