@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_56488219b812e16b4bd53b8d87edb227e5057fa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/adapter-1.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bcab4b5d018d2199d6fa493f441395274c6fc156">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/adapter-1.0.1_5ee5f64d866baa0fa095a0b1ae475aaaa664c095.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_7478d8bd5fdb1de04269c6ba49282c5fa516d98b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_bbbd445b4a8a0e2d67936a077365943c643adb78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fd6ae8c61bd548b134265ef3c37807d4efcc854c">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.6.2_0a653e727c95eb1faf4672791db3038085234aaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_3dbe1669e25fca61db016a2671d350c0c6daf8ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bc66d9bb9ec31147439d764fb1ac880fa693dd6d">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-11.6.2_e56ca8c59bb426e1243fcf43aa446dad1bd454ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="225f093d9a041f8206d812d3055a886a816ac365">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.6.2_4f2696e14cfe82797636ffb9058c043483ca1090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_e803980294eb9abcf16168dff2e006cc1642645e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_dc1078e6adf66cbf45eaa902833a0088f22860b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="deb94eef255f4c755b8217b02f689ad26a0bbdd8">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/volley_70d9700f5faadaa27f775fbf74188426630983b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_19b2c555610e2a72d895c4c8140a3a3394d61997.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9dc052d4d36b53c3a1bb2d5bf634fcac5d35037">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.6.2_2bd5e6d1c7d7af3e4f294cf352c9b767638b0d27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/commons-lang3-3.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="659861b4acde07a0527211e40d256119face1d15">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/commons-lang3-3.3.2_e576d35b599b006fadf9afbe37315135a6386a0d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_5df72255571b84051b30a7e14df0c0c4ad20974d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_386bc7bdf4009a4a6fc0dfea1be15df8ce98c5b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/endless.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f0be0f7873a403d80b1fca46026a31bba223f81b">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/endless_86a6c27636f778f55c9c21eaab0a588bc55eff91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_04db56c01d5c4a94503b233855b0b7123f5bc7a9.jar" />
+    </item>
+
+</items>
