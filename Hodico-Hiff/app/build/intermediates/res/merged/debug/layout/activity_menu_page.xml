@@ -31,7 +31,7 @@
                     android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/as3ar"
+                    android:src="@drawable/ic_prices_ip6s"
                     android:visibility="invisible" />
 
                 <View
@@ -44,7 +44,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/akhbar"
+                    android:src="@drawable/ic_news_ip6s"
                     android:visibility="invisible" />
             </LinearLayout>
 
@@ -61,7 +61,7 @@
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ma7atatak"
+                    android:src="@drawable/ic_ur_station_ip6s"
                     android:visibility="invisible" />
 
                 <View
@@ -74,7 +74,7 @@
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ta3li2ak"
+                    android:src="@drawable/ic_email_ip6s"
                     android:visibility="invisible" />
             </LinearLayout>
 
@@ -91,7 +91,7 @@
                     android:id="@+id/imageView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/sayaratak"
+                    android:src="@drawable/ic_ur_car_ip6s"
                     android:visibility="invisible" />
 
                 <View
@@ -104,7 +104,7 @@
                     android:id="@+id/imageView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/wassel"
+                    android:src="@drawable/ic_delivery_ip6s"
                     android:visibility="invisible" />
             </LinearLayout>
 
@@ -121,7 +121,7 @@
                     android:id="@+id/imageView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/etasel"
+                    android:src="@drawable/ic_call_ip6s"
                     android:visibility="invisible" />
             </LinearLayout>
         </LinearLayout>
