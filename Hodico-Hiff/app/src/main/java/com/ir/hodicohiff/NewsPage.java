@@ -16,6 +16,7 @@ import Utilities.WebHttpRequest;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.util.Linkify;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -25,7 +26,7 @@ import com.android.volley.VolleyError;
 
 
 //public class NewsPage extends SherlockListActivity {
-public class NewsPage extends Activity {
+public class NewsPage extends Activity  {
 
 	private WebHttpRequest mWeb;
 	private Tools mTools;
@@ -35,7 +36,7 @@ public class NewsPage extends Activity {
 	private ListView actualListView;
 	//private PullToRefreshListView mPullRefreshListView;
 	private TextView tvurl;
-
+	private SwipeRefreshLayout mySwipeRefreshLayout;
 	private boolean push = false;
 
 	@Override
@@ -45,26 +46,36 @@ public class NewsPage extends Activity {
 		mTools = new Tools(NewsPage.this);
 		mTools.setHeader(R.drawable.akhbarhd);
 		setContentView(R.layout.activity_news_page);
+		actualListView=(ListView)findViewById(R.id.list);
+		mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_news_page);
+
+		mySwipeRefreshLayout.setOnRefreshListener(
+				new SwipeRefreshLayout.OnRefreshListener() {
+					@Override
+					public void onRefresh() {
+						// This method performs the actual data-refresh operation.
+						// The method calls setRefreshing(false) when it's finished.
+						getData();
+                        mySwipeRefreshLayout.setRefreshing(false);
+					}
+				}
+		);
+
 
 		if (getIntent().hasExtra("push")) {
 			push = getIntent().getExtras().getBoolean("push", false);
 		}
 
+
+
 		// mTools = new Tools(this);
-
-		tvurl = (TextView) findViewById(R.id.tvurl);
-		Linkify.addLinks(tvurl, Linkify.ALL);
-
-		tvurl.setLinkTextColor(Color.WHITE);
-		
-		adapter = (NewsAdapter) getLastNonConfigurationInstance();
 
 		// Pull To Refresh
 		//mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
 
 		//actualListView = mPullRefreshListView.getRefreshableView();
 
-		registerForContextMenu(actualListView);
+		//registerForContextMenu(actualListView);
 
 		/*mPullRefreshListView
 				.setOnRefreshListener(new OnRefreshListener<ListView>() {
@@ -86,6 +97,25 @@ public class NewsPage extends Activity {
 */
 		// Get Data
 		// mTools.showLoadingDialog();
+
+		getData(); //Load data from web
+	}
+
+
+
+	//@Override
+	//public Object getLastNonConfigurationInstance() {
+	//	return (getListAdapter());
+	//}
+
+	/*
+	 * @Override public void onBackPressed() { if (!push) { MenuPage.i =
+	 * MenuPage.Menu.size(); } finish(); }
+	 */
+
+
+	private void getData()
+	{
 		mWeb = new WebHttpRequest(NewsPage.this, WebHttpRequest.WEB_NEWS,
 				new OnTaskCompleted() {
 
@@ -121,7 +151,7 @@ public class NewsPage extends Activity {
 								data = results.get(i).getString("news_data");
 								img = NewsPage.this.getString(R.string.Website)
 										+ results.get(i).getString(
-												"news_Image_path");
+										"news_Image_path");
 								link = results.get(i).getString("news_Link");
 								n.setData(data);
 								n.setTitle(title);
@@ -152,17 +182,5 @@ public class NewsPage extends Activity {
 		mTools.showLoadingDialog();
 		//mPullRefreshListView.setRefreshing(true);
 		mWeb.getJson();
-
 	}
-
-	//@Override
-	//public Object getLastNonConfigurationInstance() {
-	//	return (getListAdapter());
-	//}
-
-	/*
-	 * @Override public void onBackPressed() { if (!push) { MenuPage.i =
-	 * MenuPage.Menu.size(); } finish(); }
-	 */
-
 }

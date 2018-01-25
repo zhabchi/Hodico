@@ -20,6 +20,7 @@ import Utilities.WebHttpRequest;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,9 +45,9 @@ public class PricesPage extends Activity {
 
 	private View mHeaderView;
 	private View mFooterView;
-
+    private SwipeRefreshLayout mySwipeRefreshLayout;
 	private String date;
-	
+
 	private boolean push = false;
 
 	@Override
@@ -54,18 +55,31 @@ public class PricesPage extends Activity {
 		super.onCreate(savedInstanceState);
 		//requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_prices_page);
+		actualListView = (ListView) findViewById(R.id.pricelist);
+        mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_price_page);
 
+        mySwipeRefreshLayout.setOnRefreshListener(
+                new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+                        // This method performs the actual data-refresh operation.
+                        // The method calls setRefreshing(false) when it's finished.
+                        getPricesData();
+                        mySwipeRefreshLayout.setRefreshing(false);
+                    }
+                }
+        );
 		if (getIntent().hasExtra("push")) {
 			push = getIntent().getExtras().getBoolean("push", false);
 		}
 
 		mTools = new Tools(this);
 
-		tvurl = (TextView) findViewById(R.id.tvurl);
+		/*tvurl = (TextView) findViewById(R.id.tvurl);
 		Linkify.addLinks(tvurl, Linkify.ALL);
-		tvurl.setLinkTextColor(Color.WHITE);
+		tvurl.setLinkTextColor(Color.WHITE);*/
 
-		adapter = (PricesAdapter) getLastNonConfigurationInstance();
+		//adapter = (PricesAdapter) getLastNonConfigurationInstance();
 
 		// Pull To Refresh
 		//mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
@@ -77,10 +91,10 @@ public class PricesPage extends Activity {
 		mHeaderView = LayoutInflater.from(this).inflate(R.layout.priceshdr,
 				null);
 		actualListView.addHeaderView(mHeaderView);
-				
+
 		mFooterView = LayoutInflater.from(this).inflate(R.layout.pricesftr,
 				null);
-		
+
 		actualListView.addFooterView(mFooterView);
 		
 		/*mPullRefreshListView
@@ -101,6 +115,14 @@ public class PricesPage extends Activity {
 					}
 				});*/
 
+		getPricesData();
+	/*
+	 * @Override public void onBackPressed() { if (!push) { MenuPage.i =
+	 * MenuPage.Menu.size(); } finish(); }
+	 */
+	}
+
+	private void getPricesData() {
 		mWeb = new WebHttpRequest(PricesPage.this, WebHttpRequest.WEB_PRICES,
 				new OnTaskCompleted() {
 
@@ -157,9 +179,8 @@ public class PricesPage extends Activity {
 
 					}
 				});
-		
-		
-		
+
+
 		mWeb2 = new WebHttpRequest(PricesPage.this, WebHttpRequest.WEB_PRICESDATE,
 				new OnTaskCompleted() {
 
@@ -214,8 +235,4 @@ public class PricesPage extends Activity {
 		mWeb.getJson();
 
 	}
-	/*
-	 * @Override public void onBackPressed() { if (!push) { MenuPage.i =
-	 * MenuPage.Menu.size(); } finish(); }
-	 */
 }
