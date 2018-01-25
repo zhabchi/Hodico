@@ -143,7 +143,7 @@ ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app
 	android:label
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:44:13-45
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:46:13-72
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:46:13-60
 	android:name
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:43:13-57
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER

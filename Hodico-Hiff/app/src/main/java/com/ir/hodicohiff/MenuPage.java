@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -29,7 +30,7 @@ public class MenuPage extends Activity {
 			imgPoster5, imgPoster6, imgPoster7;
 	private Button btnStart;
 
-	private TextView tvurl;
+	//private TextView tvurl;
 
 	public static Map<Integer, ImageView> Menu;
 
@@ -43,8 +44,10 @@ public class MenuPage extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//
 		super.onCreate(savedInstanceState);
+		//Remove title bar
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 //		ActionBar actionBar = getSupportActionBar();
 //		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
@@ -61,10 +64,10 @@ public class MenuPage extends Activity {
 
 		tools = new Tools(this);
 
-		tvurl = (TextView) findViewById(R.id.tvurl);
-		Linkify.addLinks(tvurl, Linkify.ALL);
+		//tvurl = (TextView) findViewById(R.id.tvurl);
+		//Linkify.addLinks(tvurl, Linkify.ALL);
 
-		tvurl.setLinkTextColor(Color.WHITE);
+		//tvurl.setLinkTextColor(Color.WHITE);
 
 		Menu = new HashMap<Integer, ImageView>();
 
