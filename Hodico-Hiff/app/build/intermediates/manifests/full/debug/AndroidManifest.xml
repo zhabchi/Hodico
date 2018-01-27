@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ir.hodicohiff"
-    android:versionCode="6"
+    android:versionCode="8"
     android:versionName="1.3" >
 
     <uses-sdk
@@ -33,6 +33,8 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.ir.hodicohiff.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -54,100 +56,80 @@
             android:name="com.ir.hodicohiff.MenuPage"
             android:label="@string/title_activity_menu_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.NewsPage"
             android:label="@string/title_activity_news_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.InfoPage"
             android:label="@string/title_activity_info_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.CommentsPage"
             android:label="@string/title_activity_comments_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.ProductsPage"
             android:label="@string/title_activity_products_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.StationsMapFragment"
             android:label="@string/title_activity_stations_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyC5fvPj83jNA6oUgL11vPgB0sbFuOJZNZU" />
+            android:value="AIzaSyBeKa7JOHnoS2CbKPJOsuXbwResFuXTLw8" />
 
         <service
             android:name="com.ir.hodicohiff.GPSTracker"
             android:enabled="true"
-            android:exported="true" >
-        </service>
+            android:exported="true" />
 
-        <activity
-            android:name="com.ir.hodicohiff.StationsPage"
-            android:label="@string/title_activity_stations_page"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
         <activity
             android:name="com.ir.hodicohiff.SearchStationsFragment"
             android:label="@string/title_activity_search_stations_fragment"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.CarPage"
             android:label="@string/title_activity_car_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.TaxFragment"
             android:label="@string/title_activity_tax_fragment"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.OilFragment"
             android:label="@string/title_activity_oil_fragement"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.TripCostFragment"
             android:label="@string/title_activity_trip_cost_fragment"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.MapActivity"
             android:label="@string/title_activity_map"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.ir.hodicohiff.PricesPage"
             android:label="@string/title_activity_prices_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" >
-        </activity>
+            android:theme="@style/AppTheme" />
 
         <receiver
             android:name="com.google.android.gcm.GCMBroadcastReceiver"
@@ -162,9 +144,17 @@
                 <category android:name="com.ir.hodicohiff" />
             </intent-filter>
         </receiver>
-        
+                
         <service android:name="com.ir.hodicohiff.GCMIntentService" />
 
+        <activity
+            android:name="com.ir.hodicohiff.StationsPage"
+            android:label="@string/title_activity_stations_page1"
+            android:parentActivityName="com.ir.hodicohiff.MenuPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ir.hodicohiff.MenuPage" />
+        </activity>
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

@@ -2,7 +2,7 @@ package com.ir.hodicohiff;
 
 import Adapters.StationsAdapter;
 
-import android.app.Activity;
+import android.app.Fragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
-public class SearchStationsFragment extends Activity {
+public class SearchStationsFragment extends Fragment {
 
 	private ListView lv;
 	private EditText inputSearch;
@@ -37,7 +37,7 @@ public class SearchStationsFragment extends Activity {
 		tvurl.setLinkTextColor(Color.WHITE);
 
 		// Adding items to listview
-		adapter = new StationsAdapter(this, StationsPage.stations);
+		adapter = new StationsAdapter(this.getActivity(), StationsPage.stations);
 		lv.setAdapter(adapter);
 
 		inputSearch.addTextChangedListener(new TextWatcher() {
@@ -49,7 +49,7 @@ public class SearchStationsFragment extends Activity {
 				adapter.setStationsHidden(StationsPage.stations);
 				adapter.getFilter().filter(cs);
 				// if (cs.length() == 0 || arg3 > arg3-arg2) {
-				// adapter.setStationsHidden(StationsPage.stations);
+				 adapter.setStationsHidden(StationsPage.stations);
 				// }
 			}
 

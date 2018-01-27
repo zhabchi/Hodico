@@ -28,7 +28,10 @@ public class StationsAdapter extends BaseAdapter {
 	}
 
 	public int getCount() {
-		return stations.size();
+		if(stations!= null)
+		    return stations.size();
+		else
+		    return 0;
 	}
 
 	public Object getItem(int position) {

@@ -8,17 +8,13 @@ import Utilities.Tools;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.util.Linkify;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 //import com.actionbarsherlock.app.ActionBar;
 //import com.actionbarsherlock.app.ActionBar.LayoutParams;

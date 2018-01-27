@@ -3,7 +3,7 @@ package com.ir.hodicohiff;
 import Classes.Station;
 import Utilities.GPSTracker;
 
-import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,12 +19,13 @@ import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class StationsMapFragment extends Activity {
+public class StationsMapFragment extends Fragment {
 
 	private GoogleMap map;
 
@@ -48,62 +49,69 @@ public class StationsMapFragment extends Activity {
 		// Gets the MapView from the XML layout and creates it
 		mapView = (MapView) v.findViewById(R.id.map);
 		mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+                setUpMap(googleMap);
+            }
 
-		MapsInitializer.initialize(getApplicationContext());
+            // Gets to GoogleMap from the MapView and does initialization stuff
+            private void setUpMap(GoogleMap googleMap) {
+                MapsInitializer.initialize(getContext());
+                map = googleMap;
 
-		// Gets to GoogleMap from the MapView and does initialization stuff
-		map = null;//mapView.getMap();
+                gpsTracker = new GPSTracker(getContext());
 
-		gpsTracker = new GPSTracker(getApplicationContext());
+                if (gpsTracker.canGetLocation()) {
 
-		if (gpsTracker.canGetLocation()) {
+                    gpsTracker.getLocation();
 
-			gpsTracker.getLocation();
+                    // map.animateCamera(CameraUpdateFactory.zoomTo(12), 2000, null);
+                }
 
-			// map.animateCamera(CameraUpdateFactory.zoomTo(12), 2000, null);
-		}
+                if(StationsPage.stations != null) {
+                    for (Station s : StationsPage.stations) {
+                        Marker stationMarker = map.addMarker(new MarkerOptions().position(
+                                s.getPosition()).title(s.getName()));
 
-		for (Station s : StationsPage.stations) {
-			Marker stationMarker = map.addMarker(new MarkerOptions().position(
-					s.getPosition()).title(s.getName()));
+                        builder.include(stationMarker.getPosition());
 
-			builder.include(stationMarker.getPosition());
+                    }
+                }
 
-		}
+                map.setOnCameraChangeListener(new OnCameraChangeListener() {
 
-		map.setOnCameraChangeListener(new OnCameraChangeListener() {
+                    @Override
+                    public void onCameraChange(CameraPosition arg0) {
+                        // Move camera.
+                        // map.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(),
+                        // 60));
+                        map.animateCamera(CameraUpdateFactory.newLatLngBounds(
+                                builder.build(), 60));
 
-			@Override
-			public void onCameraChange(CameraPosition arg0) {
-				// Move camera.
-				// map.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(),
-				// 60));
-				map.animateCamera(CameraUpdateFactory.newLatLngBounds(
-						builder.build(), 60));
+                        // Remove listener to prevent position reset on camera move.
+                        map.setOnCameraChangeListener(null);
+                    }
+                });
 
-				// Remove listener to prevent position reset on camera move.
-				map.setOnCameraChangeListener(null);
-			}
-		});
+                map.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
 
-		map.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+                    @Override
+                    public void onInfoWindowClick(Marker marker) {
 
-			@Override
-			public void onInfoWindowClick(Marker marker) {
+                        double latitude = marker.getPosition().latitude;
+                        double longitude = marker.getPosition().longitude;
+                        String label = marker.getTitle();
+                        String uriBegin = "geo:" + latitude + "," + longitude;
+                        String query = latitude + "," + longitude + "(" + label + ")";
+                        String encodedQuery = Uri.encode(query);
+                        String uriString = uriBegin + "?q=" + encodedQuery + "&z=12";
+                        Uri uri = Uri.parse(uriString);
+                        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                                uri);
+                        startActivity(intent);
 
-				double latitude = marker.getPosition().latitude;
-				double longitude = marker.getPosition().longitude;
-				String label = marker.getTitle();
-				String uriBegin = "geo:" + latitude + "," + longitude;
-				String query = latitude + "," + longitude + "(" + label + ")";
-				String encodedQuery = Uri.encode(query);
-				String uriString = uriBegin + "?q=" + encodedQuery + "&z=12";
-				Uri uri = Uri.parse(uriString);
-				Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-						uri);
-				startActivity(intent);
-
-				// For Navigation
+                        // For Navigation
 				/*
 				 * startActivity(new Intent(Intent.ACTION_VIEW, Uri
 				 * .parse("google.navigation:ll=" +
@@ -111,23 +119,27 @@ public class StationsMapFragment extends Activity {
 				 * marker.getPosition().longitude + "&mode=c")));
 				 */
 
-			}
-		});
+                    }
+                });
 
-		map.setOnMarkerClickListener(new OnMarkerClickListener() {
+                map.setOnMarkerClickListener(new OnMarkerClickListener() {
 
-			@Override
-			public boolean onMarkerClick(Marker marker) {
-				if (marker.isInfoWindowShown()) {
-					marker.hideInfoWindow();
-				} else {
-					marker.showInfoWindow();
-				}
-				return false;
-			}
-		});
+                    @Override
+                    public boolean onMarkerClick(Marker marker) {
+                        if (marker.isInfoWindowShown()) {
+                            marker.hideInfoWindow();
+                        } else {
+                            marker.showInfoWindow();
+                        }
+                        return false;
+                    }
+                });
 
-		return v;
+            }
+        });
+
+
+        return v;
 	}
 
 	@Override

@@ -38,5 +38,10 @@
     <string name="search_stations_hint">Search stations</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_prices_page">PricesPage</string>
+    <string name="title_activity_stations_page1">StationsPage1</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>
