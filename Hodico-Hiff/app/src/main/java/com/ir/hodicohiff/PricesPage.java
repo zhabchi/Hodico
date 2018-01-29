@@ -24,6 +24,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -53,8 +54,9 @@ public class PricesPage extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//requestWindowFeature(Window.FEATURE_NO_TITLE);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_prices_page);
+
 		actualListView = (ListView) findViewById(R.id.pricelist);
         mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_price_page);
 

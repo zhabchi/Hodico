@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_bg_no_footer.xml",
-        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_bg_no_footer.xml"
-    },
-    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
@@ -54,6 +50,10 @@
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.6.2/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_footer.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_footer.png"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
@@ -132,6 +132,10 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_bg.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_bg.png"
+    },
+    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.6.2/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
@@ -180,20 +184,12 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_ur_station_ip6s.xml"
     },
     {
-        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/bgold.jpg",
-        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/bgold.jpg"
-    },
-    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/setreminder.png",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/setreminder.png"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_popup_sync_1.png",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_popup_sync_1.png"
-    },
-    {
-        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/bg2.jpg",
-        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/bg2.jpg"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/choosedate.png",
@@ -246,10 +242,6 @@
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/gradient_bg.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/gradient_bg.xml"
-    },
-    {
-        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/bg.png",
-        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/bg.png"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/gradient_bg_hover.xml",

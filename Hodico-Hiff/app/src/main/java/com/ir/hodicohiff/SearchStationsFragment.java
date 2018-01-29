@@ -32,9 +32,6 @@ public class SearchStationsFragment extends Fragment {
 		lv = (ListView) v.findViewById(R.id.list_view);
 		inputSearch = (EditText) v.findViewById(R.id.inputSearch);
 
-		tvurl = (TextView) v.findViewById(R.id.tvurl);
-		Linkify.addLinks(tvurl, Linkify.ALL);
-		tvurl.setLinkTextColor(Color.WHITE);
 
 		// Adding items to listview
 		adapter = new StationsAdapter(this.getActivity(), StationsPage.stations);

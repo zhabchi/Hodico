@@ -50,6 +50,7 @@ public class ProductsPage extends Activity {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(ProductsPage.this);
 		mTools.setHeader(R.drawable.wasselhd);
+
 		setContentView(R.layout.activity_products_page);
 
 		etQty = (EditText) findViewById(R.id.etQty);

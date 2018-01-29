@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.util.Linkify;
 import android.view.View;
+import android.view.Window;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
@@ -55,11 +56,13 @@ public class CarPage extends Activity {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(CarPage.this);
 		mTools.setHeader(R.drawable.sayaratakhd);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_car_page);
-		
-		tvurl = (TextView)findViewById(R.id.tvurl);
-		Linkify.addLinks(tvurl, Linkify.ALL);
-		tvurl.setLinkTextColor(Color.WHITE);
+
+
+		//tvurl = (TextView)findViewById(R.id.tvurl);
+		//Linkify.addLinks(tvurl, Linkify.ALL);
+		//tvurl.setLinkTextColor(Color.WHITE);
 
 		count = 0;
 

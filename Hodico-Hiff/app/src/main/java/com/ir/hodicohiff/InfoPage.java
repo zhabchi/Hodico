@@ -5,6 +5,7 @@ import Utilities.Tools;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.util.Linkify;
+import android.view.Window;
 import android.widget.TextView;
 
 //import com.actionbarsherlock.app.SherlockActivity;
@@ -21,6 +22,8 @@ public class InfoPage extends Activity {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(InfoPage.this);
 		mTools.setHeader(R.drawable.ettisalhd);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
 		setContentView(R.layout.activity_info_page);
 
 		tvT1 = (TextView) findViewById(R.id.tvT1);

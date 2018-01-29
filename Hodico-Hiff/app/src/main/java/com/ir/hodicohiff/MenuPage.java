@@ -44,18 +44,6 @@ public class MenuPage extends Activity {
 		super.onCreate(savedInstanceState);
 		//Remove title bar
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-//		ActionBar actionBar = getSupportActionBar();
-//		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-
-//		getSupportActionBar().setDisplayShowTitleEnabled(false);
-//		getSupportActionBar().setDisplayShowHomeEnabled(false);
-
-		View actionBarView = getLayoutInflater().inflate(R.layout.actionbar3,
-				null);
-
-//		ActionBar.LayoutParams params = new ActionBar.LayoutParams(
-//				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-//		actionBar.setCustomView(actionBarView, params);
 		setContentView(R.layout.activity_menu_page);
 
 		tools = new Tools(this);

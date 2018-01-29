@@ -20,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.Window;
 import android.widget.TextView;
 
 import com.android.volley.VolleyError;
@@ -57,6 +58,8 @@ public class StationsPage extends Activity implements ActionBar.TabListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_stations_page1);
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -255,7 +258,7 @@ public class StationsPage extends Activity implements ActionBar.TabListener {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_stations_page1, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_stations_page, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;

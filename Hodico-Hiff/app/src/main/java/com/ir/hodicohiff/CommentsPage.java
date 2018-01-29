@@ -19,6 +19,7 @@ import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RatingBar;
@@ -50,11 +51,10 @@ public class CommentsPage extends Activity {
 		// requestWindowFeature(Window.FEATURE_NO_TITLE);
 		mTools = new Tools(CommentsPage.this);
 		mTools.setHeader(R.drawable.ta3li2akhd);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
 		setContentView(R.layout.activity_comments_page);
 
-		tvurl = (TextView) findViewById(R.id.tvurl);
-		Linkify.addLinks(tvurl, Linkify.ALL);
-		tvurl.setLinkTextColor(Color.WHITE);
 
 		spStations = (Spinner) findViewById(R.id.spStations);
 

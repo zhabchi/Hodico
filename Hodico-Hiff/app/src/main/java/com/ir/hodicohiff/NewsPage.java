@@ -18,6 +18,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.util.Linkify;
+import android.view.Window;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -45,6 +46,8 @@ public class NewsPage extends Activity  {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(NewsPage.this);
 		mTools.setHeader(R.drawable.akhbarhd);
+
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_news_page);
 		actualListView=(ListView)findViewById(R.id.list);
 		mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.activity_news_page);
