@@ -90,14 +90,14 @@ public class PricesPage extends Activity {
 		actualListView.setDividerHeight(0);
 
 		registerForContextMenu(actualListView);
-		mHeaderView = LayoutInflater.from(this).inflate(R.layout.priceshdr,
-				null);
-		actualListView.addHeaderView(mHeaderView);
+		//mHeaderView = LayoutInflater.from(this).inflate(R.layout.priceshdr,
+		//		null);
+		//actualListView.addHeaderView(mHeaderView);
 
-		mFooterView = LayoutInflater.from(this).inflate(R.layout.pricesftr,
-				null);
+		//mFooterView = LayoutInflater.from(this).inflate(R.layout.pricesftr,
+		//		null);
 
-		actualListView.addFooterView(mFooterView);
+		//actualListView.addFooterView(mFooterView);
 		
 		/*mPullRefreshListView
 				.setOnRefreshListener(new OnRefreshListener<ListView>() {
@@ -209,8 +209,8 @@ public class PricesPage extends Activity {
 							String day = new SimpleDateFormat("EEE").format(datep);
 							sdf.applyPattern("dd/MM/yyyy");
 							date = sdf.format(datep);
-							TextView txtDate = (TextView) mFooterView.findViewById(R.id.txtDate);
-							txtDate.setText(day + " " + date);
+							//TextView txtDate = (TextView) mFooterView.findViewById(R.id.txtDate);
+							//txtDate.setText(day + " " + date);
 							//mPullRefreshListView.onRefreshComplete();
 							mTools.hideLoadingDialog();
 							actualListView.requestLayout();
@@ -231,7 +231,7 @@ public class PricesPage extends Activity {
 				});
 
 		// Get Data at start
-		mTools.showLoadingDialog();
+		//mTools.showLoadingDialog();
 		//mPullRefreshListView.setRefreshing(true);
 		mWeb2.getJson();
 		mWeb.getJson();
