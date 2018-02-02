@@ -20,7 +20,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.view.Window;
 import android.widget.TextView;
 
 import com.android.volley.VolleyError;
@@ -60,7 +59,7 @@ public class StationsPage extends Activity implements ActionBar.TabListener {
         super.onCreate(savedInstanceState);
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_stations_page1);
+        setContentView(R.layout.activity_stations_page);
         getActionBar().setDisplayHomeAsUpEnabled(true); //disabled action bar
 
         //first get list of stations from server

@@ -10,8 +10,11 @@ import Classes.StringWithTag;
 import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
+
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
@@ -43,7 +46,7 @@ public class TaxFragment extends Fragment {
 		View v = inflater.inflate(R.layout.activity_tax_fragment, container,
 				false);
 
-		mTools = new Tools(getActivity());
+		/*mTools = new Tools(getActivity());
 
 		btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
 
@@ -138,8 +141,8 @@ public class TaxFragment extends Fragment {
 										mTools.hideLoadingDialog();
 										mTools.displayAlert("Tax",
 												"Amount due: " + amount,
-														/*+ "\nPeriod due: "
-														+ period,*/
+														//+ "\nPeriod due: "
+														//+ period,
 												android.R.string.ok, false);
 
 									} catch (JSONException e) {
@@ -162,7 +165,7 @@ public class TaxFragment extends Fragment {
 				}
 			}
 		});
-
+	*/
 		return v;
 	}
 

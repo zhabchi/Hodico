@@ -7,6 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
+import Adapters.CarsSectionsPagerAdapter;
 import Classes.Product;
 import Classes.StringWithTag;
 import Utilities.OnTaskCompleted;
@@ -14,24 +16,22 @@ import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
+
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.text.util.Linkify;
-import android.view.View;
-import android.view.Window;
+import android.support.v4.view.ViewPager;
+
 import android.widget.DatePicker;
 import android.widget.TextView;
 
 import com.android.volley.VolleyError;
 
-public class CarPage extends Activity {
+public class CarPage extends Activity implements ActionBar.TabListener {
 
 	private Tools mTools;
 	
@@ -50,13 +50,15 @@ public class CarPage extends Activity {
 	private WebHttpRequest mWeb5;
 
 	private static int count = 0;
+    private CarsSectionsPagerAdapter mSectionsPagerAdapter;
+    private ViewPager mViewPager;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(CarPage.this);
 		mTools.setHeader(R.drawable.sayaratakhd);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
 		setContentView(R.layout.activity_car_page);
 
 
@@ -64,276 +66,42 @@ public class CarPage extends Activity {
 		//Linkify.addLinks(tvurl, Linkify.ALL);
 		//tvurl.setLinkTextColor(Color.WHITE);
 
-		count = 0;
+		setContentView(R.layout.activity_car_page);
+		getActionBar().setDisplayHomeAsUpEnabled(true); //disabled action bar
 
-		mWeb1 = new WebHttpRequest(getApplicationContext(),
-				WebHttpRequest.WEB_TAX_CARTYPE, new OnTaskCompleted() {
+        mSectionsPagerAdapter = new CarsSectionsPagerAdapter(getFragmentManager());
 
-					@Override
-					public void onTaskError(VolleyError arg0) {
-						mTools.displayAlert("Error",
-								"Please connect to the internet",
-								android.R.string.ok, true);
-						mTools.hideLoadingDialog();
-					}
+		// Set up the ViewPager with the sections adapter.
+		mViewPager = (ViewPager) findViewById(R.id.Carcontainer);
+		mViewPager.setAdapter(mSectionsPagerAdapter);
 
-					@Override
-					public void onTaskCompleted(JSONArray arg0) {
-						int id;
-						String descr = "";
+		// Set up the action bar.
+		final ActionBar actionBar = getActionBar();
+		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-						StringWithTag type;
-						CarTypes = new ArrayList<StringWithTag>();
+		// When swiping between different sections, select the corresponding
+		// tab. We can also use ActionBar.Tab#select() to do this if we have
+		// a reference to the Tab.
+		mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+			@Override
+			public void onPageSelected(int position) {
+				actionBar.setSelectedNavigationItem(position);
+			}
+		});
 
-						List<JSONObject> results;
-						results = mTools.parseJson(arg0);
+		// For each of the sections in the app, add a tab to the action bar.
+		for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
+			// Create a tab with text corresponding to the page title defined by
+			// the adapter. Also specify this Activity object, which implements
+			// the TabListener interface, as the callback (listener) for when
+			// this tab is selected.
+			actionBar.addTab(
+					actionBar.newTab()
+							.setText(mSectionsPagerAdapter.getPageTitle(i))
+							.setTabListener(this)
+							.setIcon(mSectionsPagerAdapter.getPageIcon(i)));
 
-						try {
-							for (int i = 0; i < results.size(); i++) {
-								type = new StringWithTag();
-								id = results.get(i).getInt("car_type_id");
-								descr = results.get(i).getString(
-										"car_type_description");
-								type.setTag(id);
-								type.setString(descr);
-								CarTypes.add(type);
-
-							}
-							count++;
-							if (count == 5) {
-								mTools.hideLoadingDialog();
-								//createTabs();
-							}
-						} catch (JSONException e) {
-							e.printStackTrace();
-						}
-
-					}
-
-					@Override
-					public void onTaskCompleted(String arg0) {
-						// TODO Auto-generated method stub
-
-					}
-				});
-
-		mWeb2 = new WebHttpRequest(getApplicationContext(),
-				WebHttpRequest.WEB_TAX_CARYEARMAKE, new OnTaskCompleted() {
-
-					@Override
-					public void onTaskError(VolleyError arg0) {
-						mTools.displayAlert("Error",
-								"Please connect to the internet",
-								android.R.string.ok, true);
-						mTools.hideLoadingDialog();
-
-					}
-
-					@Override
-					public void onTaskCompleted(JSONArray arg0) {
-						int id;
-						String descr = "";
-
-						StringWithTag make;
-						CarMakes = new ArrayList<StringWithTag>();
-
-						List<JSONObject> results;
-						results = mTools.parseJson(arg0);
-
-						try {
-							for (int i = 0; i < results.size(); i++) {
-								make = new StringWithTag();
-								id = results.get(i).getInt("car_yearmake_id");
-								descr = results.get(i).getString(
-										"car_yearmake_description");
-								make.setTag(id);
-								make.setString(descr);
-								CarMakes.add(make);
-
-							}
-							count++;
-							if (count == 5) {
-								mTools.hideLoadingDialog();
-//								createTabs();
-							}
-						} catch (JSONException e) {
-							e.printStackTrace();
-						}
-
-					}
-
-					@Override
-					public void onTaskCompleted(String arg0) {
-						// TODO Auto-generated method stub
-
-					}
-				});
-
-		mWeb3 = new WebHttpRequest(getApplicationContext(),
-				WebHttpRequest.WEB_TAX_CARHORSEPOWER, new OnTaskCompleted() {
-
-					@Override
-					public void onTaskError(VolleyError arg0) {
-						mTools.displayAlert("Error",
-								"Please connect to the internet",
-								android.R.string.ok, true);
-						mTools.hideLoadingDialog();
-
-					}
-
-					@Override
-					public void onTaskCompleted(JSONArray arg0) {
-						int id;
-						String descr = "";
-
-						StringWithTag horsepower;
-						HorsePowers = new ArrayList<StringWithTag>();
-
-						List<JSONObject> results;
-						results = mTools.parseJson(arg0);
-
-						try {
-							for (int i = 0; i < results.size(); i++) {
-								horsepower = new StringWithTag();
-								id = results.get(i).getInt("car_horsepower_id");
-								descr = results.get(i).getString(
-										"car_horsepower_description");
-								horsepower.setTag(id);
-								horsepower.setString(descr);
-								HorsePowers.add(horsepower);
-
-							}
-							count++;
-							if (count == 5) {
-								mTools.hideLoadingDialog();
-								//createTabs();
-							}
-						} catch (JSONException e) {
-							e.printStackTrace();
-						}
-
-					}
-
-					@Override
-					public void onTaskCompleted(String arg0) {
-						// TODO Auto-generated method stub
-
-					}
-				});
-
-		mWeb4 = new WebHttpRequest(getApplicationContext(),
-				WebHttpRequest.WEB_TAX_CARSYMBOL, new OnTaskCompleted() {
-
-					@Override
-					public void onTaskError(VolleyError arg0) {
-						mTools.displayAlert("Error",
-								"Please connect to the internet",
-								android.R.string.ok, true);
-						mTools.hideLoadingDialog();
-
-					}
-
-					@Override
-					public void onTaskCompleted(JSONArray arg0) {
-						int id;
-						String descr = "";
-
-						StringWithTag symbol;
-						Symbols = new ArrayList<StringWithTag>();
-
-						List<JSONObject> results;
-						results = mTools.parseJson(arg0);
-
-						try {
-							for (int i = 0; i < results.size(); i++) {
-								symbol = new StringWithTag();
-								id = results.get(i).getInt("car_symbol_id");
-								descr = results.get(i).getString(
-										"car_symbol_desc");
-								symbol.setTag(id);
-								symbol.setString(descr);
-								Symbols.add(symbol);
-
-							}
-							count++;
-							if (count == 5) {
-								mTools.hideLoadingDialog();
-								//createTabs();
-							}
-						} catch (JSONException e) {
-							e.printStackTrace();
-						}
-
-					}
-
-					@Override
-					public void onTaskCompleted(String arg0) {
-						// TODO Auto-generated method stub
-
-					}
-				});
-
-		mWeb5 = new WebHttpRequest(getApplicationContext(),
-				WebHttpRequest.WEB_PRICESTRIP, new OnTaskCompleted() {
-
-					@Override
-					public void onTaskError(VolleyError arg0) {
-						// TODO Auto-generated method stub
-						mTools.displayAlert("Error",
-								"Please connect to the internet",
-								android.R.string.ok, true);
-						mTools.hideLoadingDialog();
-					}
-
-					@Override
-					public void onTaskCompleted(JSONArray arg0) {
-
-						int id;
-						String product = "";
-						int price = 0;
-						Product p;
-						Products = new ArrayList<Product>();
-
-						List<JSONObject> results;
-						results = mTools.parseJson(arg0);
-
-						try {
-							for (int i = 0; i < results.size(); i++) {
-								p = new Product();
-								id = results.get(i).getInt("pp_product_id");
-								product = results.get(i).getString(
-										"product_description");
-								price = results.get(i).getInt(
-										"pp_product_price");
-								p.setProduct(product);
-								p.setPrice(price);
-								p.setId(id);
-								Products.add(p);
-							}
-							count++;
-							if (count == 5) {
-								mTools.hideLoadingDialog();
-								//createTabs();
-							}
-						} catch (JSONException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-					}
-
-					@Override
-					public void onTaskCompleted(String arg0) {
-						// TODO Auto-generated method stub
-
-					}
-				});
-
-		mTools.showLoadingDialog();
-		mWeb1.getJson();
-		mWeb2.getJson();
-		mWeb3.getJson();
-		mWeb4.getJson();
-		mWeb5.getJson();
+		}
 
 	}
 
@@ -436,4 +204,293 @@ public class CarPage extends Activity {
 		super.onActivityResult(requestCode, resultCode, data);
 	}
 
+
+	private void PopulateAllData(){
+
+		count = 0;
+
+		mWeb1 = new WebHttpRequest(getApplicationContext(),
+				WebHttpRequest.WEB_TAX_CARTYPE, new OnTaskCompleted() {
+
+			@Override
+			public void onTaskError(VolleyError arg0) {
+				mTools.displayAlert("Error",
+						"Please connect to the internet",
+						android.R.string.ok, true);
+				mTools.hideLoadingDialog();
+			}
+
+			@Override
+			public void onTaskCompleted(JSONArray arg0) {
+				int id;
+				String descr = "";
+
+				StringWithTag type;
+				CarTypes = new ArrayList<StringWithTag>();
+
+				List<JSONObject> results;
+				results = mTools.parseJson(arg0);
+
+				try {
+					for (int i = 0; i < results.size(); i++) {
+						type = new StringWithTag();
+						id = results.get(i).getInt("car_type_id");
+						descr = results.get(i).getString(
+								"car_type_description");
+						type.setTag(id);
+						type.setString(descr);
+						CarTypes.add(type);
+
+					}
+					count++;
+					if (count == 5) {
+						mTools.hideLoadingDialog();
+						//createTabs();
+					}
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+
+			}
+
+			@Override
+			public void onTaskCompleted(String arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		mWeb2 = new WebHttpRequest(getApplicationContext(),
+				WebHttpRequest.WEB_TAX_CARYEARMAKE, new OnTaskCompleted() {
+
+			@Override
+			public void onTaskError(VolleyError arg0) {
+				mTools.displayAlert("Error",
+						"Please connect to the internet",
+						android.R.string.ok, true);
+				mTools.hideLoadingDialog();
+
+			}
+
+			@Override
+			public void onTaskCompleted(JSONArray arg0) {
+				int id;
+				String descr = "";
+
+				StringWithTag make;
+				CarMakes = new ArrayList<StringWithTag>();
+
+				List<JSONObject> results;
+				results = mTools.parseJson(arg0);
+
+				try {
+					for (int i = 0; i < results.size(); i++) {
+						make = new StringWithTag();
+						id = results.get(i).getInt("car_yearmake_id");
+						descr = results.get(i).getString(
+								"car_yearmake_description");
+						make.setTag(id);
+						make.setString(descr);
+						CarMakes.add(make);
+
+					}
+					count++;
+					if (count == 5) {
+						mTools.hideLoadingDialog();
+//								createTabs();
+					}
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+
+			}
+
+			@Override
+			public void onTaskCompleted(String arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		mWeb3 = new WebHttpRequest(getApplicationContext(),
+				WebHttpRequest.WEB_TAX_CARHORSEPOWER, new OnTaskCompleted() {
+
+			@Override
+			public void onTaskError(VolleyError arg0) {
+				mTools.displayAlert("Error",
+						"Please connect to the internet",
+						android.R.string.ok, true);
+				mTools.hideLoadingDialog();
+
+			}
+
+			@Override
+			public void onTaskCompleted(JSONArray arg0) {
+				int id;
+				String descr = "";
+
+				StringWithTag horsepower;
+				HorsePowers = new ArrayList<StringWithTag>();
+
+				List<JSONObject> results;
+				results = mTools.parseJson(arg0);
+
+				try {
+					for (int i = 0; i < results.size(); i++) {
+						horsepower = new StringWithTag();
+						id = results.get(i).getInt("car_horsepower_id");
+						descr = results.get(i).getString(
+								"car_horsepower_description");
+						horsepower.setTag(id);
+						horsepower.setString(descr);
+						HorsePowers.add(horsepower);
+
+					}
+					count++;
+					if (count == 5) {
+						mTools.hideLoadingDialog();
+						//createTabs();
+					}
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+
+			}
+
+			@Override
+			public void onTaskCompleted(String arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		mWeb4 = new WebHttpRequest(getApplicationContext(),
+				WebHttpRequest.WEB_TAX_CARSYMBOL, new OnTaskCompleted() {
+
+			@Override
+			public void onTaskError(VolleyError arg0) {
+				mTools.displayAlert("Error",
+						"Please connect to the internet",
+						android.R.string.ok, true);
+				mTools.hideLoadingDialog();
+
+			}
+
+			@Override
+			public void onTaskCompleted(JSONArray arg0) {
+				int id;
+				String descr = "";
+
+				StringWithTag symbol;
+				Symbols = new ArrayList<StringWithTag>();
+
+				List<JSONObject> results;
+				results = mTools.parseJson(arg0);
+
+				try {
+					for (int i = 0; i < results.size(); i++) {
+						symbol = new StringWithTag();
+						id = results.get(i).getInt("car_symbol_id");
+						descr = results.get(i).getString(
+								"car_symbol_desc");
+						symbol.setTag(id);
+						symbol.setString(descr);
+						Symbols.add(symbol);
+
+					}
+					count++;
+					if (count == 5) {
+						mTools.hideLoadingDialog();
+						//createTabs();
+					}
+				} catch (JSONException e) {
+					e.printStackTrace();
+				}
+
+			}
+
+			@Override
+			public void onTaskCompleted(String arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		mWeb5 = new WebHttpRequest(getApplicationContext(),
+				WebHttpRequest.WEB_PRICESTRIP, new OnTaskCompleted() {
+
+			@Override
+			public void onTaskError(VolleyError arg0) {
+				// TODO Auto-generated method stub
+				mTools.displayAlert("Error",
+						"Please connect to the internet",
+						android.R.string.ok, true);
+				mTools.hideLoadingDialog();
+			}
+
+			@Override
+			public void onTaskCompleted(JSONArray arg0) {
+
+				int id;
+				String product = "";
+				int price = 0;
+				Product p;
+				Products = new ArrayList<Product>();
+
+				List<JSONObject> results;
+				results = mTools.parseJson(arg0);
+
+				try {
+					for (int i = 0; i < results.size(); i++) {
+						p = new Product();
+						id = results.get(i).getInt("pp_product_id");
+						product = results.get(i).getString(
+								"product_description");
+						price = results.get(i).getInt(
+								"pp_product_price");
+						p.setProduct(product);
+						p.setPrice(price);
+						p.setId(id);
+						Products.add(p);
+					}
+					count++;
+					if (count == 5) {
+						mTools.hideLoadingDialog();
+						//createTabs();
+					}
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+
+			@Override
+			public void onTaskCompleted(String arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		mTools.showLoadingDialog();
+		mWeb1.getJson();
+		mWeb2.getJson();
+		mWeb3.getJson();
+		mWeb4.getJson();
+		mWeb5.getJson();
+	}
+
+    @Override
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+        mViewPager.setCurrentItem(tab.getPosition());
+    }
+
+    @Override
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+    }
+
+    @Override
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+    }
 }

@@ -5,6 +5,7 @@ import java.util.Calendar;
 import Utilities.Tools;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,7 +19,7 @@ import android.widget.Toast;
 
 
 
-public class OilFragment extends Activity {
+public class OilFragment extends Fragment {
 
 	public static TextView txtDate;
 	private Button btnChangeDate, btnSubmit;
@@ -38,7 +39,7 @@ public class OilFragment extends Activity {
 		View v = inflater.inflate(R.layout.activity_oil_fragement, container,
 				false);
 
-		mTools = new Tools(getApplicationContext());
+		mTools = new Tools(getContext());
 
 		etAvgKm = (EditText) v.findViewById(R.id.etAvgKmDay);
 		etAfter = (EditText) v.findViewById(R.id.etAfterKm);
