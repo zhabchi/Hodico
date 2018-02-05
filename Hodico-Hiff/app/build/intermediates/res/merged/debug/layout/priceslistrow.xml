@@ -23,8 +23,7 @@
             android:paddingBottom="0dp"
             android:paddingRight="25dp"
             android:text="asd"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30sp" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
         
         <!-- 
         <View
@@ -39,8 +38,7 @@
             android:layout_toLeftOf="@+id/txtCur"
             android:background="#cccc00"
             android:text="asd"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30sp" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/txtCur"
@@ -50,8 +48,7 @@
             android:background="#cccc00"
             android:paddingRight="5dp"
             android:text="asd"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30sp" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
     </RelativeLayout>
 
 </LinearLayout>

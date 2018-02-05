@@ -67,7 +67,7 @@ public class CarPage extends Activity implements ActionBar.TabListener {
 		//tvurl.setLinkTextColor(Color.WHITE);
 
 		setContentView(R.layout.activity_car_page);
-		getActionBar().setDisplayHomeAsUpEnabled(true); //disabled action bar
+		getActionBar().setDisplayHomeAsUpEnabled(false); //disabled action bar
 
         mSectionsPagerAdapter = new CarsSectionsPagerAdapter(getFragmentManager());
 
@@ -102,6 +102,7 @@ public class CarPage extends Activity implements ActionBar.TabListener {
 							.setIcon(mSectionsPagerAdapter.getPageIcon(i)));
 
 		}
+		actionBar.setDisplayShowTitleEnabled(false);
 
 	}
 

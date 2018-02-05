@@ -20,10 +20,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignTop="@+id/txtPrice"
             android:gravity="center_vertical"
+            android:paddingBottom="0dp"
             android:paddingRight="25dp"
             android:text="asd"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30sp" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
         
         <!-- 
         <View
@@ -36,20 +36,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@+id/txtCur"
-            android:text="asd"
             android:background="#cccc00"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="28sp" />
+            android:text="asd"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
         <TextView
             android:id="@+id/txtCur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="asd"
-            android:padding="0dp"
             android:background="#cccc00"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="28sp" />
+            android:paddingRight="5dp"
+            android:text="asd"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
     </RelativeLayout>
 
 </LinearLayout>
