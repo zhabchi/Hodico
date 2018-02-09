@@ -1,5 +1,6 @@
 package com.ir.hodicohiff;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.json.JSONArray;
@@ -46,8 +47,9 @@ public class TaxFragment extends Fragment {
 		View v = inflater.inflate(R.layout.activity_tax_fragment, container,
 				false);
 
-		/*mTools = new Tools(getActivity());
-
+		//mTools = new Tools(getActivity());
+        mTools = new Tools(getContext());
+        mTools.setHeader(R.drawable.sayaratakhd);
 		btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
 
 		//etPlateNb = (EditText) v.findViewById(R.id.etCarPlate);
@@ -60,20 +62,13 @@ public class TaxFragment extends Fragment {
 
 		//spSymbol = (Spinner) v.findViewById(R.id.spCarSymbol);
 
-		ArrayAdapter<StringWithTag> CarTypeAdap = new ArrayAdapter<StringWithTag>(
-				getActivity(), R.layout.spin_layout, CarPage.CarTypes);
+        populateCarType();
 
-		spCarType.setAdapter(CarTypeAdap);
+        populateCarMake();
 
-		ArrayAdapter<StringWithTag> CarMakeAdap = new ArrayAdapter<StringWithTag>(
-				getActivity(), R.layout.spin_layout, CarPage.CarMakes);
+        populateCarHorsePower();
 
-		spCarMake.setAdapter(CarMakeAdap);
 
-		ArrayAdapter<StringWithTag> CarHorsePowerAdap = new ArrayAdapter<StringWithTag>(
-				getActivity(), R.layout.spin_layout, CarPage.HorsePowers);
-
-		spHorsePower.setAdapter(CarHorsePowerAdap);
 
 		ArrayAdapter<StringWithTag> CarSymbolAdap = new ArrayAdapter<StringWithTag>(
 				getActivity(), R.layout.spin_layout, CarPage.Symbols);
@@ -165,11 +160,11 @@ public class TaxFragment extends Fragment {
 				}
 			}
 		});
-	*/
+
 		return v;
 	}
 
-	@Override
+    @Override
 	public void onResume() {
 		super.onResume();
 	}
@@ -192,4 +187,186 @@ public class TaxFragment extends Fragment {
 		//}
 		return result;
 	}
+
+	private void populateCarType()
+    {
+
+        WebHttpRequest mWeb1 = new WebHttpRequest(this.getContext(),
+                WebHttpRequest.WEB_TAX_CARTYPE, new OnTaskCompleted() {
+
+            @Override
+            public void onTaskError(VolleyError arg0) {
+                mTools.displayAlert("Error",
+                        "Please connect to the internet",
+                        android.R.string.ok, true);
+                mTools.hideLoadingDialog();
+            }
+
+            @Override
+            public void onTaskCompleted(JSONArray arg0) {
+                int id;
+                String descr = "";
+
+                List<StringWithTag> CarTypes = new ArrayList<StringWithTag>();
+
+                StringWithTag type;
+                CarTypes.clear();
+
+                List<JSONObject> results;
+                results = mTools.parseJson(arg0);
+
+                try {
+                    for (int i = 0; i < results.size(); i++) {
+                        type = new StringWithTag();
+                        id = results.get(i).getInt("car_type_id");
+                        descr = results.get(i).getString(
+                                "car_type_description");
+                        type.setTag(id);
+                        type.setString(descr);
+                        CarTypes.add(type);
+
+                    }
+
+                    if(CarTypes != null) {
+                        ArrayAdapter<StringWithTag> CarTypeAdap = new ArrayAdapter<StringWithTag>(
+                                getActivity(), R.layout.spin_layout, CarTypes);
+
+                        spCarType.setAdapter(CarTypeAdap);
+                    }
+                    mTools.hideLoadingDialog();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onTaskCompleted(String arg0) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+
+        mWeb1.getJson();
+    }
+
+    private void populateCarMake()
+    {
+         WebHttpRequest mWeb2 = new WebHttpRequest(getContext(),
+                WebHttpRequest.WEB_TAX_CARYEARMAKE, new OnTaskCompleted() {
+
+            @Override
+            public void onTaskError(VolleyError arg0) {
+                mTools.displayAlert("Error",
+                        "Please connect to the internet",
+                        android.R.string.ok, true);
+                mTools.hideLoadingDialog();
+
+            }
+
+            @Override
+            public void onTaskCompleted(JSONArray arg0) {
+                int id;
+                String descr = "";
+
+                StringWithTag make;
+                List<StringWithTag> CarMakes = new ArrayList<StringWithTag>();
+
+                List<JSONObject> results;
+                results = mTools.parseJson(arg0);
+
+                try {
+                    for (int i = 0; i < results.size(); i++) {
+                        make = new StringWithTag();
+                        id = results.get(i).getInt("car_yearmake_id");
+                        descr = results.get(i).getString(
+                                "car_yearmake_description");
+                        make.setTag(id);
+                        make.setString(descr);
+                        CarMakes.add(make);
+
+                    }
+
+                    if(CarMakes != null) {
+                        ArrayAdapter<StringWithTag> CarMakeAdap = new ArrayAdapter<StringWithTag>(
+                                getActivity(), R.layout.spin_layout, CarMakes);
+
+                        spCarMake.setAdapter(CarMakeAdap);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onTaskCompleted(String arg0) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+
+        mWeb2.getJson();
+    }
+
+    private void populateCarHorsePower() {
+
+        WebHttpRequest mWeb3 = new WebHttpRequest(getContext(),
+                WebHttpRequest.WEB_TAX_CARHORSEPOWER, new OnTaskCompleted() {
+
+            @Override
+            public void onTaskError(VolleyError arg0) {
+                mTools.displayAlert("Error",
+                        "Please connect to the internet",
+                        android.R.string.ok, true);
+                mTools.hideLoadingDialog();
+
+            }
+
+            @Override
+            public void onTaskCompleted(JSONArray arg0) {
+                int id;
+                String descr = "";
+
+                StringWithTag horsepower;
+                List<StringWithTag> HorsePowers = new ArrayList<StringWithTag>();
+
+                List<JSONObject> results;
+                results = mTools.parseJson(arg0);
+
+                try {
+                    for (int i = 0; i < results.size(); i++) {
+                        horsepower = new StringWithTag();
+                        id = results.get(i).getInt("car_horsepower_id");
+                        descr = results.get(i).getString(
+                                "car_horsepower_description");
+                        horsepower.setTag(id);
+                        horsepower.setString(descr);
+                        HorsePowers.add(horsepower);
+
+                    }
+
+                    if(HorsePowers!= null) {
+                        ArrayAdapter<StringWithTag> CarHorsePowerAdap = new ArrayAdapter<StringWithTag>(
+                                getActivity(), R.layout.spin_layout, HorsePowers);
+
+                        spHorsePower.setAdapter(CarHorsePowerAdap);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onTaskCompleted(String arg0) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+
+	    mWeb3.getJson();
+    }
 }

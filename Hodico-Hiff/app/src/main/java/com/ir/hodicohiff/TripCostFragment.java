@@ -2,11 +2,16 @@ package com.ir.hodicohiff;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
+import java.util.List;
 
 import Adapters.ProductsAdapter;
 import Classes.Product;
 import Utilities.GPSTracker;
+import Utilities.OnTaskCompleted;
 import Utilities.Tools;
+import Utilities.WebHttpRequest;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
@@ -25,6 +30,12 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.VolleyError;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 //import com.actionbarsherlock.app.SherlockFragment;
 
@@ -51,7 +62,7 @@ public class TripCostFragment extends Fragment {
 		View v = inflater.inflate(R.layout.activity_trip_cost_fragment,
 				container, false);
 
-		/*mTools = new Tools(getContext());
+		mTools = new Tools(getContext());
 
 		btnFromMyLocation = (ImageButton) v.findViewById(R.id.FromMyLocation);
 		btnToMyLocation = (ImageButton) v.findViewById(R.id.ToMyLocation);
@@ -66,8 +77,8 @@ public class TripCostFragment extends Fragment {
 		etAvgKm = (EditText) v.findViewById(R.id.etAvgKm);
 		spFuelTypes = (Spinner) v.findViewById(R.id.spFuelType);
 
-		ProductsAdapter dataAdapter = new ProductsAdapter(getActivity(), CarPage.Products);
-		spFuelTypes.setAdapter(dataAdapter);
+		populateProducts();
+
 
 		etSource.setOnTouchListener(new OnTouchListener() {
 
@@ -112,7 +123,7 @@ public class TripCostFragment extends Fragment {
 				return true;
 			}
 		});
-		*/
+
 		/*
 		 * etDestination.setOnClickListener(new OnClickListener() {
 		 * 
@@ -222,6 +233,66 @@ public class TripCostFragment extends Fragment {
 		});*/
 
 		return v;
+	}
+
+	private void populateProducts() {
+
+		WebHttpRequest mWeb5;
+		mWeb5 = new WebHttpRequest(getContext(),
+				WebHttpRequest.WEB_PRICESTRIP, new OnTaskCompleted() {
+
+			@Override
+			public void onTaskError(VolleyError arg0) {
+				// TODO Auto-generated method stub
+				mTools.displayAlert("Error",
+						"Please connect to the internet",
+						android.R.string.ok, true);
+				mTools.hideLoadingDialog();
+			}
+
+			@Override
+			public void onTaskCompleted(JSONArray arg0) {
+
+				int id;
+				String product = "";
+				int price = 0;
+				Product p;
+				List<Product> Products  = new ArrayList<Product>();
+
+				List<JSONObject> results;
+				results = mTools.parseJson(arg0);
+
+				try {
+					for (int i = 0; i < results.size(); i++) {
+						p = new Product();
+						id = results.get(i).getInt("pp_product_id");
+						product = results.get(i).getString(
+								"product_description");
+						price = results.get(i).getInt(
+								"pp_product_price");
+						p.setProduct(product);
+						p.setPrice(price);
+						p.setId(id);
+						Products.add(p);
+					}
+
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				ProductsAdapter dataAdapter = new ProductsAdapter(getActivity(), Products);
+				spFuelTypes.setAdapter(dataAdapter);
+			}
+
+			@Override
+			public void onTaskCompleted(String arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+
+		mWeb5.getJson();
 	}
 
 	@Override

@@ -3,5 +3,4 @@
     android:id="@+id/Product"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="7dp"
-    android:textSize="20sp" />
+    android:paddingBottom="7dp" />

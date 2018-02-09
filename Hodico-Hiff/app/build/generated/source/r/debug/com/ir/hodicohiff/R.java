@@ -3062,13 +3062,13 @@ containing a value of this type.
         public static final int Khousoumat=0x7f0b008b;
         public static final int MainFrame=0x7f0b008f;
         public static final int Nazafa=0x7f0b0083;
-        public static final int Product=0x7f0b00fb;
+        public static final int Product=0x7f0b00fa;
         public static final int Tawafor=0x7f0b0089;
         public static final int ToMyLocation=0x7f0b00d3;
         public static final int View1=0x7f0b00a4;
         public static final int View2=0x7f0b00a7;
         public static final int View3=0x7f0b00aa;
-        public static final int action0=0x7f0b00ea;
+        public static final int action0=0x7f0b00e9;
         public static final int action_bar=0x7f0b006d;
         public static final int action_bar_activity_content=0x7f0b0000;
         public static final int action_bar_container=0x7f0b006c;
@@ -3077,13 +3077,13 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0b004e;
         public static final int action_bar_title=0x7f0b004d;
         public static final int action_context_bar=0x7f0b006e;
-        public static final int action_divider=0x7f0b00ee;
+        public static final int action_divider=0x7f0b00ed;
         public static final int action_menu_divider=0x7f0b0002;
         public static final int action_menu_presenter=0x7f0b0003;
         public static final int action_mode_bar=0x7f0b006a;
         public static final int action_mode_bar_stub=0x7f0b0069;
         public static final int action_mode_close_button=0x7f0b004f;
-        public static final int action_settings=0x7f0b00ff;
+        public static final int action_settings=0x7f0b00fe;
         public static final int activity_chooser_view_content=0x7f0b0050;
         public static final int activity_news_page=0x7f0b00ad;
         public static final int activity_price_page=0x7f0b00b7;
@@ -3100,14 +3100,14 @@ containing a value of this type.
         public static final int btnSend=0x7f0b008e;
         public static final int btnSubmit=0x7f0b00cd;
         public static final int buttonPanel=0x7f0b0057;
-        public static final int cancel_action=0x7f0b00eb;
+        public static final int cancel_action=0x7f0b00ea;
         public static final int center=0x7f0b0026;
         public static final int center_horizontal=0x7f0b0027;
         public static final int center_vertical=0x7f0b0028;
         public static final int chains=0x7f0b0012;
         public static final int changeDate=0x7f0b00b1;
         public static final int checkbox=0x7f0b0065;
-        public static final int chronometer=0x7f0b00f1;
+        public static final int chronometer=0x7f0b00f0;
         public static final int clip_horizontal=0x7f0b0034;
         public static final int clip_vertical=0x7f0b0035;
         public static final int collapseActionView=0x7f0b0041;
@@ -3117,7 +3117,7 @@ containing a value of this type.
         public static final int custom=0x7f0b0063;
         public static final int customPanel=0x7f0b0062;
         public static final int dark=0x7f0b0049;
-        public static final int data=0x7f0b00e9;
+        public static final int data=0x7f0b00e8;
         public static final int decor_content_parent=0x7f0b006b;
         public static final int default_activity_button=0x7f0b0053;
         public static final int design_bottom_sheet=0x7f0b00dd;
@@ -3128,7 +3128,7 @@ containing a value of this type.
         public static final int disableHome=0x7f0b0017;
         public static final int edit_query=0x7f0b006f;
         public static final int end=0x7f0b0029;
-        public static final int end_padder=0x7f0b00f6;
+        public static final int end_padder=0x7f0b00f5;
         public static final int enterAlways=0x7f0b001d;
         public static final int enterAlwaysCollapsed=0x7f0b001e;
         public static final int etAfterKm=0x7f0b00b5;
@@ -3161,20 +3161,20 @@ containing a value of this type.
         public static final int imageView5=0x7f0b00a9;
         public static final int imageView6=0x7f0b00ab;
         public static final int imageView7=0x7f0b00ac;
-        public static final int info=0x7f0b00f5;
+        public static final int info=0x7f0b00f4;
         public static final int inputSearch=0x7f0b00c4;
         public static final int item_touch_helper_previous_elevation=0x7f0b0005;
         public static final int left=0x7f0b002b;
         public static final int light=0x7f0b004a;
-        public static final int line1=0x7f0b00ef;
-        public static final int line3=0x7f0b00f3;
+        public static final int line1=0x7f0b00ee;
+        public static final int line3=0x7f0b00f2;
         public static final int list=0x7f0b00ae;
         public static final int listMode=0x7f0b0014;
-        public static final int list_image=0x7f0b00e8;
+        public static final int list_image=0x7f0b00e7;
         public static final int list_item=0x7f0b0054;
         public static final int list_view=0x7f0b00c5;
         public static final int map=0x7f0b00a3;
-        public static final int media_actions=0x7f0b00ed;
+        public static final int media_actions=0x7f0b00ec;
         public static final int middle=0x7f0b003a;
         public static final int mini=0x7f0b0038;
         public static final int multiply=0x7f0b002f;
@@ -3210,7 +3210,6 @@ containing a value of this type.
         public static final int search_plate=0x7f0b0075;
         public static final int search_src_text=0x7f0b0076;
         public static final int search_voice_btn=0x7f0b007a;
-        public static final int section_label=0x7f0b00e6;
         public static final int select_dialog_listview=0x7f0b007b;
         public static final int shortcut=0x7f0b0066;
         public static final int showCustom=0x7f0b0019;
@@ -3234,15 +3233,15 @@ containing a value of this type.
         public static final int src_over=0x7f0b0033;
         public static final int standard=0x7f0b0046;
         public static final int start=0x7f0b002d;
-        public static final int station_address=0x7f0b00fd;
-        public static final int station_name=0x7f0b00fc;
-        public static final int status_bar_latest_event_content=0x7f0b00ec;
+        public static final int station_address=0x7f0b00fc;
+        public static final int station_name=0x7f0b00fb;
+        public static final int status_bar_latest_event_content=0x7f0b00eb;
         public static final int submit_area=0x7f0b0078;
         public static final int tabMode=0x7f0b0016;
-        public static final int tab_title=0x7f0b00fe;
+        public static final int tab_title=0x7f0b00fd;
         public static final int terrain=0x7f0b003f;
-        public static final int text=0x7f0b00f4;
-        public static final int text2=0x7f0b00f2;
+        public static final int text=0x7f0b00f3;
+        public static final int text2=0x7f0b00f1;
         public static final int textSpacerNoButtons=0x7f0b0060;
         public static final int textView1=0x7f0b0082;
         public static final int textView2=0x7f0b0084;
@@ -3250,9 +3249,9 @@ containing a value of this type.
         public static final int textView4=0x7f0b0088;
         public static final int textView5=0x7f0b008a;
         public static final int textView6=0x7f0b008c;
-        public static final int throbber=0x7f0b00fa;
-        public static final int thumbnail=0x7f0b00e7;
-        public static final int time=0x7f0b00f0;
+        public static final int throbber=0x7f0b00f9;
+        public static final int thumbnail=0x7f0b00e6;
+        public static final int time=0x7f0b00ef;
         public static final int title=0x7f0b0056;
         public static final int title_template=0x7f0b005b;
         public static final int top=0x7f0b002e;
@@ -3292,15 +3291,15 @@ containing a value of this type.
         public static final int txtCarType=0x7f0b00c7;
         public static final int txtCost=0x7f0b00da;
         public static final int txtCostRes=0x7f0b00db;
-        public static final int txtCur=0x7f0b00f9;
+        public static final int txtCur=0x7f0b00f8;
         public static final int txtDate=0x7f0b00b0;
         public static final int txtDestination=0x7f0b00d1;
         public static final int txtFuelType=0x7f0b00d6;
         public static final int txtLastChange=0x7f0b00af;
         public static final int txtLiters=0x7f0b00d8;
         public static final int txtLitersRes=0x7f0b00d9;
-        public static final int txtPrice=0x7f0b00f8;
-        public static final int txtProduct=0x7f0b00f7;
+        public static final int txtPrice=0x7f0b00f7;
+        public static final int txtProduct=0x7f0b00f6;
         public static final int txtSource=0x7f0b00ce;
         public static final int txtStations=0x7f0b007f;
         public static final int up=0x7f0b0009;
@@ -3481,26 +3480,22 @@ containing a value of this type.
         public static final int dummy_content=0x7f05003c;
         public static final int hello_world=0x7f05003d;
         public static final int search_stations_hint=0x7f05003e;
-        public static final int section_format=0x7f05003f;
         public static final int status_bar_notification_info_overflow=0x7f050024;
-        public static final int tab_text_1=0x7f050040;
-        public static final int tab_text_2=0x7f050041;
-        public static final int tab_text_3=0x7f050042;
-        public static final int title_activity_car_page=0x7f050043;
-        public static final int title_activity_comments_page=0x7f050044;
-        public static final int title_activity_info_page=0x7f050045;
-        public static final int title_activity_main=0x7f050046;
-        public static final int title_activity_map=0x7f050047;
-        public static final int title_activity_menu_page=0x7f050048;
-        public static final int title_activity_news_page=0x7f050049;
-        public static final int title_activity_oil_fragement=0x7f05004a;
-        public static final int title_activity_prices_page=0x7f05004b;
-        public static final int title_activity_products_page=0x7f05004c;
-        public static final int title_activity_search_stations_fragment=0x7f05004d;
-        public static final int title_activity_stations_page=0x7f05004e;
-        public static final int title_activity_stations_page1=0x7f05004f;
-        public static final int title_activity_tax_fragment=0x7f050050;
-        public static final int title_activity_trip_cost_fragment=0x7f050051;
+        public static final int title_activity_car_page=0x7f05003f;
+        public static final int title_activity_comments_page=0x7f050040;
+        public static final int title_activity_info_page=0x7f050041;
+        public static final int title_activity_main=0x7f050042;
+        public static final int title_activity_map=0x7f050043;
+        public static final int title_activity_menu_page=0x7f050044;
+        public static final int title_activity_news_page=0x7f050045;
+        public static final int title_activity_oil_fragement=0x7f050046;
+        public static final int title_activity_prices_page=0x7f050047;
+        public static final int title_activity_products_page=0x7f050048;
+        public static final int title_activity_search_stations_fragment=0x7f050049;
+        public static final int title_activity_stations_page=0x7f05004a;
+        public static final int title_activity_stations_page1=0x7f05004b;
+        public static final int title_activity_tax_fragment=0x7f05004c;
+        public static final int title_activity_trip_cost_fragment=0x7f05004d;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08008a;
@@ -3510,12 +3505,6 @@ containing a value of this type.
         public static final int Animation_Design_BottomSheetDialog=0x7f08008e;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-        
          */
         public static final int AppBaseTheme=0x7f08000c;
         public static final int AppTheme=0x7f08008f;
