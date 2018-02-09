@@ -23,6 +23,7 @@ import android.text.TextWatcher;
 import android.text.util.Linkify;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,7 +51,7 @@ public class ProductsPage extends Activity {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(ProductsPage.this);
 		mTools.setHeader(R.drawable.wasselhd);
-
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_products_page);
 
 		etQty = (EditText) findViewById(R.id.etQty);
@@ -64,9 +65,9 @@ public class ProductsPage extends Activity {
 
 		etPhone.setText(mTools.getPhoneNumber());
 
-		tvurl = (TextView) findViewById(R.id.tvurl);
-		Linkify.addLinks(tvurl, Linkify.ALL);
-		tvurl.setLinkTextColor(Color.WHITE);
+		//tvurl = (TextView) findViewById(R.id.tvurl);
+		//Linkify.addLinks(tvurl, Linkify.ALL);
+		//tvurl.setLinkTextColor(Color.WHITE);
 
 		mWeb = new WebHttpRequest(ProductsPage.this,
 				WebHttpRequest.WEB_PRICESDEL, new OnTaskCompleted() {
