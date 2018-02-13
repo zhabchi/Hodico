@@ -83,14 +83,19 @@ public class StationsMapFragment extends Fragment {
 
                     @Override
                     public void onCameraChange(CameraPosition arg0) {
-                        // Move camera.
-                        // map.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(),
-                        // 60));
-                        map.animateCamera(CameraUpdateFactory.newLatLngBounds(
-                                builder.build(), 60));
+                        try {
+                            // Move camera.
+                            // map.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(),
+                            // 60));
+                            map.animateCamera(CameraUpdateFactory.newLatLngBounds(
+                                    builder.build(), 60));
 
-                        // Remove listener to prevent position reset on camera move.
-                        map.setOnCameraChangeListener(null);
+                            // Remove listener to prevent position reset on camera move.
+                            map.setOnCameraChangeListener(null);
+                        }
+                        catch (Exception e) {
+                        }
+
                     }
                 });
 

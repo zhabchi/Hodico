@@ -1,6 +1,58 @@
-<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ir.hodicohiff.StationsPage" />
+
+    android:background="@drawable/ic_bg">
+
+
+
+    <!-- Header aligned to top -->
+    <include layout="@layout/header_layout" />
+
+    <!-- Footer aligned to bottom -->
+    <include layout="@layout/footer_layout" />
+
+<LinearLayout
+    android:id="@+id/activity_stations_page"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/header"
+    android:layout_above="@+id/footer"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+
+        android:id="@+id/activity_stations_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat"
+        app:tabGravity="fill"
+        app:tabMode="fixed">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/Stations_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_map"
+            android:text="@string/Stations_station_tab" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/Search_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_search"
+            android:text="@string/Stations_Search_tab" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ir.hodicohiff.StationsPage"></android.support.v4.view.ViewPager>
+
+</LinearLayout>
+</RelativeLayout>

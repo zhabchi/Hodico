@@ -404,6 +404,8 @@
     <string name="PricesTrip">http://www.hodico.com/mAdmin/prices_getdata.php?trip=1</string>
     <string name="Products">http://www.hodico.com/mAdmin/products_getdata.php</string>
     <string name="Stations">http://www.hodico.com/mAdmin/stations_getdata.php</string>
+    <string name="Stations_Search_tab">Search</string>
+    <string name="Stations_station_tab">Stations</string>
     <string name="Tax">http://www.hodico.com/mAdmin/tax_getdata.php</string>
     <string name="TaxCarHorsePower">http://www.hodico.com/mAdmin/tax_getdata.php?car_horsepower=true</string>
     <string name="TaxCarSymbol">http://www.hodico.com/mAdmin/tax_getdata.php?car_symbol=true</string>
@@ -452,8 +454,6 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="hello_world">Hello world!</string>
     <string name="search_stations_hint">Search stations</string>
     <string name="status_bar_notification_info_overflow">999+</string>
