@@ -12,6 +12,7 @@ import Utilities.OnTaskCompleted;
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
@@ -57,8 +58,9 @@ public class TripCostFragment extends Fragment {
 	// private int RESULT_CANCELED = 0;
 
 	//@Override
+	@SuppressLint("ClickableViewAccessibility")
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.activity_trip_cost_fragment,
 				container, false);
 
@@ -78,7 +80,6 @@ public class TripCostFragment extends Fragment {
 		spFuelTypes = (Spinner) v.findViewById(R.id.spFuelType);
 
 		populateProducts();
-
 
 		etSource.setOnTouchListener(new OnTouchListener() {
 
@@ -134,7 +135,7 @@ public class TripCostFragment extends Fragment {
 		 * startActivityForResult(i, 2); } });
 		 */
 
-		/*gpsTracker = new GPSTracker(getContext());
+		gpsTracker = new GPSTracker(getContext());
 
 		btnFromMyLocation.setOnClickListener(new OnClickListener() {
 
@@ -230,7 +231,7 @@ public class TripCostFragment extends Fragment {
 							Toast.LENGTH_SHORT);
 				}
 			}
-		});*/
+		});
 
 		return v;
 	}

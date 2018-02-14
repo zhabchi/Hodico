@@ -11,51 +11,82 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnCameraChangeListener;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+
+import Utilities.GPSTracker;
 
 public class MapActivity extends Activity {
 
 	private GoogleMap map;
-
+	private MapView mapView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_map);
 
-		map = null;//((MapFragment) getFragmentManager().findFragmentById(R.id.map))
-				//.getMap();
+        mapView = (MapView) findViewById(R.id.map);
+		mapView.onCreate(savedInstanceState);
 
-		final CameraPosition Lebanon = new CameraPosition.Builder()
-				.target(new LatLng(33.8869, 35.5131)).zoom(12).build();
 
-		map.setOnCameraChangeListener(new OnCameraChangeListener() {
+		mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+                setUpMap(googleMap);
+            }
 
-			@Override
-			public void onCameraChange(CameraPosition arg0) { // Movcamera.
-				// map.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(),
-				// 60));
-				map.animateCamera(CameraUpdateFactory
-						.newCameraPosition(Lebanon));
+            // Gets to GoogleMap from the MapView and does initialization stuff
+            private void setUpMap(GoogleMap googleMap) {
+                MapsInitializer.initialize(getApplicationContext());
+                map = googleMap;
 
-				// Remove listener to prevent position reset on camera move.
-				map.setOnCameraChangeListener(null);
-			}
-		});
+                 GPSTracker gpsTracker = new GPSTracker(getApplicationContext());
 
-		map.setOnMapClickListener(new OnMapClickListener() {
+                if (gpsTracker.canGetLocation()) {
 
-			@Override
-			public void onMapClick(LatLng point) {
-				Intent returnIntent = new Intent();
-				returnIntent.putExtra("lat", point.latitude);
-				returnIntent.putExtra("long", point.longitude);
-				setResult(RESULT_OK, returnIntent);
-				//moveTaskToBack(true);
-				finish();
-			}
-		});
+                    gpsTracker.getLocation();
+
+                    // map.animateCamera(CameraUpdateFactory.zoomTo(12), 2000, null);
+                }
+
+                final CameraPosition Lebanon = new CameraPosition.Builder()
+                        .target(new LatLng(33.8869, 35.5131)).zoom(12).build();
+
+                map.animateCamera(CameraUpdateFactory.newCameraPosition(Lebanon));
+
+                /*map.setOnCameraChangeListener(new OnCameraChangeListener() {
+
+                    @Override
+                    public void onCameraChange(CameraPosition arg0) { // Movcamera.
+                        // map.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(),
+                        // 60));
+                        map.animateCamera(CameraUpdateFactory
+                                .newCameraPosition(Lebanon));
+
+                        // Remove listener to prevent position reset on camera move.
+                        map.setOnCameraChangeListener(null);
+                    }
+                });*/
+
+
+                map.setOnMapClickListener(new OnMapClickListener() {
+
+                    @Override
+                    public void onMapClick(LatLng point) {
+                        Intent returnIntent = new Intent();
+                        returnIntent.putExtra("lat", point.latitude);
+                        returnIntent.putExtra("long", point.longitude);
+                        setResult(RESULT_OK, returnIntent);
+                        //moveTaskToBack(true);
+                        finish();
+                    }
+                });
+            }
+        });
 	}
 
 	@Override
@@ -64,5 +95,7 @@ public class MapActivity extends Activity {
 		getMenuInflater().inflate(R.menu.map, menu);
 		return true;
 	}
+
+
 
 }

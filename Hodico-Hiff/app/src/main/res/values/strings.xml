@@ -6,7 +6,9 @@
     <string name="Stations_Search_tab">Search</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="Tax_tab">Tax</string>
+    <string name="Oil_tab">Oil</string>
+    <string name="Trip_tab">Trip</string>
     <string name="title_activity_menu_page">MenuPage</string>
     <string name="News">http://www.hodico.com/mAdmin/news_getdata.php</string>
     <string name="Tips">http://www.hodico.com/mAdmin/tips_getdata.php</string>

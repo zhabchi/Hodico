@@ -133,7 +133,7 @@ public class TaxFragment extends Fragment {
 													"tax_due_period");
 										}
 
-										mTools.hideLoadingDialog();
+
 										mTools.displayAlert("Tax",
 												"Amount due: " + amount,
 														//+ "\nPeriod due: "
@@ -143,6 +143,7 @@ public class TaxFragment extends Fragment {
 									} catch (JSONException e) {
 										e.printStackTrace();
 									}
+                                    mTools.hideLoadingDialog();
 								}
 
 								@Override
@@ -233,10 +234,11 @@ public class TaxFragment extends Fragment {
 
                         spCarType.setAdapter(CarTypeAdap);
                     }
-                    mTools.hideLoadingDialog();
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+                mTools.hideLoadingDialog();
 
             }
 
@@ -247,6 +249,8 @@ public class TaxFragment extends Fragment {
             }
         });
 
+        if(mTools.isOnline())
+            mTools.showLoadingDialog();
         mWeb1.getJson();
     }
 
@@ -297,7 +301,7 @@ public class TaxFragment extends Fragment {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
+                mTools.hideLoadingDialog();
             }
 
             @Override
@@ -307,6 +311,8 @@ public class TaxFragment extends Fragment {
             }
         });
 
+        if(!mTools.isOnline())
+            mTools.showLoadingDialog();
         mWeb2.getJson();
     }
 
@@ -357,7 +363,7 @@ public class TaxFragment extends Fragment {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
+                mTools.hideLoadingDialog();
             }
 
             @Override
@@ -367,6 +373,8 @@ public class TaxFragment extends Fragment {
             }
         });
 
+        if(!mTools.isOnline())
+            mTools.showLoadingDialog();
 	    mWeb3.getJson();
     }
 }

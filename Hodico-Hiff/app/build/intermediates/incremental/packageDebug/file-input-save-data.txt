@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Feb 09 18:36:49 GST 2018
+#Tue Feb 13 17:00:24 GST 2018
 210.set=ANDROID_RESOURCE
 282.file=/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/resources-debug.ap_/res/menu/products_page.xml
 14.set=ANDROID_RESOURCE
