@@ -32,6 +32,7 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/google-services/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/debug" isTestSource="true" generated="true" />
@@ -96,10 +97,23 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement-license/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm-license/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid-license/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps-license/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks-license/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl-license/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-license/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-common-license/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-common/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-core/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-iid-license/11.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/11.6.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
@@ -115,6 +129,9 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-iid-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gcm-license-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-iid-license-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-base-license-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:animated-vector-drawable-23.4.0" level="project" />
@@ -122,11 +139,14 @@
     <orderEntry type="library" exported="" name="com.android.support:design-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-media-compat-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-license-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-iid-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/commons-lang3-3.3.2.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-maps-license-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support.constraint:constraint-layout-1.0.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-analytics-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/endless.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-iid-license-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-v4-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-fragment-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:recyclerview-v7-23.4.0" level="project" />
@@ -135,12 +155,19 @@
     <orderEntry type="library" exported="" name="com.android.support:support-core-utils-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-basement-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-v13-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-common-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-tasks-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-common-license-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-core-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/adapter-1.0.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-compat-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="com.android.support:support-annotations:25.2.0@jar" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/gcm.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.google.android.gms:play-services-gcm-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-base-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-analytics-license-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-analytics-impl-11.6.2" level="project" />
+    <orderEntry type="library" exported="" name="com.google.firebase:firebase-analytics-impl-license-11.6.2" level="project" />
     <orderEntry type="library" exported="" name="__local_jars__:/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/volley.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="com.google.android.gms:play-services-tasks-license-11.6.2" level="project" />
   </component>

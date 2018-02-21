@@ -6,11 +6,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import Listeners.MyInstanceIDListenerService;
+import Listeners.QuickstartPreferences;
+import Listeners.RegistrationIntentService;
 import Listeners.ShakeListener;
 import Listeners.ShakeListener.OnShakeListener;
 import Utilities.CommonUtilities;
 import Utilities.OnTaskCompleted;
-import Utilities.ServerUtilities;
+
 import Utilities.Tools;
 import Utilities.WebHttpRequest;
 import android.app.Activity;
@@ -21,6 +24,8 @@ import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.PowerManager.WakeLock;
+import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -28,7 +33,11 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
-//import com.google.android.gcm.GCMRegistrar;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.iid.InstanceID;
+import com.google.android.gms.iid.InstanceIDListenerService;
+import com.google.android.gms.gcm.GcmReceiver;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -48,6 +57,7 @@ public class FirstScreen extends Activity {
 	private WebHttpRequest mWeb;
 
 	private String tipoftheday;
+	private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 
 	private WakeLock mWakeLock;
 	private AsyncTask<Void, Void, Void> mRegisterTask;
@@ -61,7 +71,7 @@ public class FirstScreen extends Activity {
 
 		mTools = new Tools(this);
 
-		//RegisterGCM();
+		RegisterGCM();
 
 		mainframe = (FrameLayout) findViewById(R.id.MainFrame);
 
@@ -178,13 +188,18 @@ public class FirstScreen extends Activity {
 		mShaker.setOnShakeListener(null);
 	}
 
-/*	public void RegisterGCM() {
+	public void RegisterGCM() {
 
-		email = mTools.getPrimaryEmail();
-		name = mTools.getDeviceID();
+		//email = mTools.getPrimaryEmail();
+		//name = mTools.getDeviceID();
+
+		if (checkPlayServices()) {
+			Intent intent = new Intent(this, RegistrationIntentService.class);
+			startService(intent);
+		}
 
 		// Make sure the device has the proper dependencies.
-		GCMRegistrar.checkDevice(this);
+		/*GCMRegistrar.checkDevice(this);
 
 		// Make sure the manifest was properly set - comment out this line
 		// while developing the app, then uncomment it when it's ready.
@@ -228,9 +243,9 @@ public class FirstScreen extends Activity {
 
 				mRegisterTask.execute(null, null, null);
 			}
-		}
+		}*/
 	}
-*/
+
 	/**
 	 * Receiving push messages
 	 * */
@@ -256,5 +271,21 @@ public class FirstScreen extends Activity {
 			}
 		}
 	};
+
+	private boolean checkPlayServices() {
+		GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+		int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
+		if (resultCode != ConnectionResult.SUCCESS) {
+			if (apiAvailability.isUserResolvableError(resultCode)) {
+				apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST)
+						.show();
+			} else {
+				Log.i("First Screen", "This device is not supported.");
+				finish();
+			}
+			return false;
+		}
+		return true;
+	}
 
 }

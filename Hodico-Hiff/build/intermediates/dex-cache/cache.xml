@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_56488219b812e16b4bd53b8d87edb227e5057fa0.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/adapter-1.0.1.jar"
         jumboMode="false"
         optimize="true"
@@ -57,21 +48,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.6.2/jars/classes.jar"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/11.6.2/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="bc66d9bb9ec31147439d764fb1ac880fa693dd6d">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-11.6.2_e56ca8c59bb426e1243fcf43aa446dad1bd454ab.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.6.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="225f093d9a041f8206d812d3055a886a816ac365">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.6.2_4f2696e14cfe82797636ffb9058c043483ca1090.jar" />
+        sha1="b0ae7bfe4591746f6491a4a270ee56712062d1ca">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-11.6.2_692e0f6b4b7dc6f4acebe4b37f3b45b1b558ff11.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,42 +66,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_e803980294eb9abcf16168dff2e006cc1642645e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ziadh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_dc1078e6adf66cbf45eaa902833a0088f22860b4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-v13-23.4.0_da189bfe013a68994703990eeb7eec1135cb1883.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/volley.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="deb94eef255f4c755b8217b02f689ad26a0bbdd8">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/volley_70d9700f5faadaa27f775fbf74188426630983b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -129,21 +75,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.6.2/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_d7dda7bbbbb7c7b0f60a9491d33918c1014d129b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.2_89a9618c853abc27dc797117628add466d7cac44.jar" />
+        sha1="28e6b4fd73c50ebde0dc4e0590037b755581add5">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.6.2_3d5d25a3eaca590cb352a250bd290335f2d0d19c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,6 +102,141 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_386bc7bdf4009a4a6fc0dfea1be15df8ce98c5b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="108c3cdbdb89a05d388a170bd3549b1e43ad6d54">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-11.6.2_5ce72b660b66809ce51f736bf49f6b4a9927bc5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_04db56c01d5c4a94503b233855b0b7123f5bc7a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_56488219b812e16b4bd53b8d87edb227e5057fa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4d7b1a23cecd2855bdfbd8266650d140e9e6977c">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-11.6.2_2d949d810577be630df7144cda05a0a68f87d1b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f14b1ebaf50c9c119b0b892f696d2a8e019ee53a">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.6.2_2283eb41b6a94ad6253fba57dfc712c2a49e0272.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bc66d9bb9ec31147439d764fb1ac880fa693dd6d">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-11.6.2_e56ca8c59bb426e1243fcf43aa446dad1bd454ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="225f093d9a041f8206d812d3055a886a816ac365">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.6.2_4f2696e14cfe82797636ffb9058c043483ca1090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_e803980294eb9abcf16168dff2e006cc1642645e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_dc1078e6adf66cbf45eaa902833a0088f22860b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/11.6.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a0b869be21f2e39e9b337bec395d9a7e111da21e">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-11.6.2_605af2b6ad9f0b74af12700f11e10648c8ad04e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-v13-23.4.0_da189bfe013a68994703990eeb7eec1135cb1883.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="deb94eef255f4c755b8217b02f689ad26a0bbdd8">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/volley_70d9700f5faadaa27f775fbf74188426630983b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_d7dda7bbbbb7c7b0f60a9491d33918c1014d129b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.2_89a9618c853abc27dc797117628add466d7cac44.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -183,15 +255,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_386bc7bdf4009a4a6fc0dfea1be15df8ce98c5b8.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/libs/endless.jar"
         jumboMode="false"
         optimize="true"
@@ -207,15 +270,6 @@
         revision="23.0.3"
         sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
         <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_6992a677047ed02735c391998dfdee09186bb0c6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_04db56c01d5c4a94503b233855b0b7123f5bc7a9.jar" />
     </item>
 
 </items>

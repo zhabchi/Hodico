@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "967330872888",
+    "firebase_url": "https://api-project-967330872888.firebaseio.com",
+    "project_id": "api-project-967330872888",
+    "storage_bucket": "api-project-967330872888.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967330872888:android:c7e409af26b0edae",
+        "android_client_info": {
+          "package_name": "com.ir.hodicohiff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967330872888-8i75lpqm86k8l444tf1pbamltkvc5rs2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "967330872888-u9fbk8t9aatr7ifvnpj0u7d0n8jbm3ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNrYKJClZXUkHwqPvUPL_cKkxcdxNs85c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

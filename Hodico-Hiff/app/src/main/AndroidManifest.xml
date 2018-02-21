@@ -90,10 +90,7 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBeKa7JOHnoS2CbKPJOsuXbwResFuXTLw8" />
 
-        <service
-            android:name=".GPSTracker"
-            android:enabled="true"
-            android:exported="true"></service>
+
 
         <activity
             android:name=".SearchStationsFragment"
@@ -131,21 +128,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"></activity>
 
-        <receiver
-            android:name="com.google.android.gcm.GCMBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-
-                <!-- Receives the actual messages. -->
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <!-- Receives the registration id. -->
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-
-                <category android:name="com.ir.hodicohiff" />
-            </intent-filter>
-        </receiver>
-                
-        <service android:name=".GCMIntentService" />
 
         <activity
             android:name=".StationsPage"
@@ -155,6 +137,36 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ir.hodicohiff.MenuPage" />
         </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.ir.hodicohiff" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="Listeners.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="Listeners.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="Listeners.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
     </application>
 
 </manifest>

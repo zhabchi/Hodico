@@ -458,6 +458,15 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">967330872888-8i75lpqm86k8l444tf1pbamltkvc5rs2.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://api-project-967330872888.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">967330872888</string>
+    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="google_api_key" translatable="false">AIzaSyDNrYKJClZXUkHwqPvUPL_cKkxcdxNs85c</string>
+    <string name="google_app_id" translatable="false">1:967330872888:android:c7e409af26b0edae</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDNrYKJClZXUkHwqPvUPL_cKkxcdxNs85c</string>
+    <string name="google_storage_bucket" translatable="false">api-project-967330872888.appspot.com</string>
+    <string name="project_id" translatable="false">api-project-967330872888</string>
     <string name="search_stations_hint">Search stations</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_car_page">CarPage</string>

@@ -9,7 +9,7 @@ android {
         applicationId "com.ir.hodicohiff"
         minSdkVersion 23
         targetSdkVersion 23
-        versionCode 10
+        versionCode 11
     }
     buildTypes {
         release {
@@ -32,5 +32,7 @@ dependencies {
     compile 'com.android.support:design:23.4.0'
     compile 'com.android.support:support-v13:23.4.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile "com.google.android.gms:play-services-gcm:11.6.2"
+    apply plugin: 'com.google.gms.google-services'
 
 }

@@ -691,8 +691,27 @@
                     "startLine": 38,
                     "startColumn": 4,
                     "startOffset": 4817,
+                    "endColumn": 101,
+                    "endOffset": 4914
+                },
+                "from": {
+                    "file": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.6.2/res/values-tl/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 230,
+                        "endColumn": 97,
+                        "endOffset": 327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 4919,
                     "endColumn": 100,
-                    "endOffset": 4913
+                    "endOffset": 5015
                 },
                 "from": {
                     "file": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-tl/values-tl.xml",

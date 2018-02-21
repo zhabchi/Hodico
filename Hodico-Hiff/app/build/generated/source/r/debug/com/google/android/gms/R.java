@@ -123,6 +123,7 @@ public final class R {
 		public static final int common_open_on_phone = 0x7f050021;
 		public static final int common_signin_button_text = 0x7f050022;
 		public static final int common_signin_button_text_long = 0x7f050023;
+		public static final int gcm_fallback_notification_channel_label = 0x7f050024;
 	}
 	public static final class style {
 	}

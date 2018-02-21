@@ -324,6 +324,25 @@
                         "endOffset": 2734
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2820,
+                    "endColumn": 99,
+                    "endOffset": 2915
+                },
+                "from": {
+                    "file": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.6.2/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 230,
+                        "endColumn": 95,
+                        "endOffset": 325
+                    }
+                }
             }
         ]
     }
