@@ -34,14 +34,14 @@
                 android:id="@+id/Stations_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_map"
+                android:icon="@drawable/ic_search_map"
                 android:text="@string/Stations_station_tab" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/Search_tab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_search"
+                android:icon="@drawable/ic_search_stations"
                 android:text="@string/Stations_Search_tab" />
 
         </android.support.design.widget.TabLayout>

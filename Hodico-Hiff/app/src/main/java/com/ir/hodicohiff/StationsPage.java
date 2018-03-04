@@ -284,9 +284,9 @@ public class StationsPage extends Activity {
 
         public int getPageIcon(int i) {
             if(i == 0)
-                return R.drawable.ic_map;
+                return R.drawable.ic_search_map;
             else
-                return R.drawable.ic_search;
+                return R.drawable.ic_search_stations;
         }
     }
 }
