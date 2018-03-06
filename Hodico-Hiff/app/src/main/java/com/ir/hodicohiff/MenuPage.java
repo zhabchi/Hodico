@@ -3,18 +3,23 @@ package com.ir.hodicohiff;
 import java.util.HashMap;
 import java.util.Map;
 
+import Listeners.RegistrationIntentService;
 import Utilities.MenuAnimator;
 import Utilities.Tools;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 
 //import com.actionbarsherlock.app.ActionBar;
 //import com.actionbarsherlock.app.ActionBar.LayoutParams;
@@ -25,7 +30,7 @@ public class MenuPage extends Activity {
 	private ImageView imgPoster1, imgPoster2, imgPoster3, imgPoster4,
 			imgPoster5, imgPoster6, imgPoster7;
 	private Button btnStart;
-
+    private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 	//private TextView tvurl;
 
 	public static Map<Integer, ImageView> Menu;
@@ -153,7 +158,36 @@ public class MenuPage extends Activity {
 			ma.animateMenu(i);
 		}
 
+		RegisterGCM();
+
 	}
+
+    public void RegisterGCM() {
+
+        //email = mTools.getPrimaryEmail();
+        //name = mTools.getDeviceID();
+
+        if (checkPlayServices()) {
+            Intent intent = new Intent(this, RegistrationIntentService.class);
+            startService(intent);
+        }
+    }
+
+    private boolean checkPlayServices() {
+        GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
+        int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
+        if (resultCode != ConnectionResult.SUCCESS) {
+            if (apiAvailability.isUserResolvableError(resultCode)) {
+                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST)
+                        .show();
+            } else {
+                Log.i("First Screen", "This device is not supported.");
+                finish();
+            }
+            return false;
+        }
+        return true;
+    }
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 

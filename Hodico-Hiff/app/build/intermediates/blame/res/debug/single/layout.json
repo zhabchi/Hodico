@@ -76,10 +76,6 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
     },
     {
-        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/layout/btnsetreminder.xml",
-        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/layout/btnsetreminder.xml"
-    },
-    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_layout_snackbar_include.xml"
     },
@@ -154,10 +150,6 @@
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/layout/btnchoosedate.xml",
-        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/layout/btnchoosedate.xml"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/layout/tabs.xml",

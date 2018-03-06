@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:2:1-172:12
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:2:1-168:12
 	package
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml
@@ -151,7 +151,7 @@ ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app
 	android:name
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:37:22-77
 application
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:39:5-170:19
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:39:5-166:19
 MERGED from [com.google.android.gms:play-services-maps:11.6.2] /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.6.2/AndroidManifest.xml:24:5-19
 MERGED from [com.google.android.gms:play-services-maps-license:11.6.2] /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps-license/11.6.2/AndroidManifest.xml:5:5-20
 MERGED from [com.android.support:design:23.4.0] /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/AndroidManifest.xml:22:5-20
@@ -193,16 +193,16 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.6.2] /Users/ziadh
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:41:9-45
 	android:theme
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:43:9-40
-activity#com.ir.hodicohiff.FirstScreen
+activity#com.ir.hodicohiff.MenuPage
 ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:44:9-54:20
 	android:screenOrientation
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:47:13-49
 	android:label
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:46:13-45
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:48:13-60
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:48:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:45:13-40
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:45:13-37
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:49:13-53:29
 action#android.intent.action.MAIN
@@ -213,211 +213,201 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:52:17-77
 	android:name
 		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:52:27-74
-activity#com.ir.hodicohiff.MenuPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:55:9-59:56
-	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:58:13-49
-	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:57:13-61
-	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:59:13-44
-	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:56:13-37
 activity#com.ir.hodicohiff.NewsPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:60:9-64:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:56:9-60:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:63:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:59:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:62:13-61
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:58:13-61
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:64:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:60:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:61:13-37
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:57:13-37
 activity#com.ir.hodicohiff.InfoPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:65:9-69:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:61:9-65:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:68:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:64:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:67:13-61
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:63:13-61
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:69:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:65:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:66:13-37
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:62:13-37
 activity#com.ir.hodicohiff.CommentsPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:70:9-74:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:66:9-70:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:73:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:69:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:72:13-65
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:68:13-65
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:74:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:70:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:71:13-41
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:67:13-41
 activity#com.ir.hodicohiff.ProductsPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:75:9-79:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:71:9-75:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:78:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:74:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:77:13-65
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:73:13-65
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:79:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:75:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:76:13-41
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:72:13-41
 activity#com.ir.hodicohiff.StationsMapFragment
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:80:9-84:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:76:9-80:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:83:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:79:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:82:13-65
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:78:13-65
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:84:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:80:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:81:13-48
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:77:13-48
 meta-data#com.google.android.gms.version
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:86:9-88:69
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:82:9-84:69
 MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.6.2/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:88:13-66
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:84:13-66
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:87:13-58
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:83:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:89:9-91:71
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:85:9-87:71
 	android:value
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:91:13-68
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:87:13-68
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:90:13-62
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:86:13-62
 activity#com.ir.hodicohiff.SearchStationsFragment
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:95:9-99:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:91:9-95:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:98:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:94:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:97:13-76
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:93:13-76
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:99:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:95:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:96:13-51
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:92:13-51
 activity#com.ir.hodicohiff.CarPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:100:9-104:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:96:9-100:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:103:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:99:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:102:13-60
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:98:13-60
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:104:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:100:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:101:13-36
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:97:13-36
 activity#com.ir.hodicohiff.TaxFragment
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:105:9-109:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:101:9-105:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:108:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:104:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:107:13-64
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:103:13-64
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:109:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:105:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:106:13-40
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:102:13-40
 activity#com.ir.hodicohiff.OilFragment
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:110:9-114:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:106:9-110:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:113:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:109:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:112:13-65
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:108:13-65
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:114:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:110:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:111:13-40
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:107:13-40
 activity#com.ir.hodicohiff.TripCostFragment
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:115:9-119:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:111:9-115:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:118:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:114:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:117:13-70
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:113:13-70
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:119:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:115:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:116:13-45
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:112:13-45
 activity#com.ir.hodicohiff.MapActivity
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:120:9-124:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:116:9-120:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:123:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:119:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:122:13-55
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:118:13-55
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:124:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:120:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:121:13-40
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:117:13-40
 activity#com.ir.hodicohiff.PricesPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:125:9-129:56
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:121:9-125:56
 	android:screenOrientation
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:128:13-49
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:124:13-49
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:127:13-63
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:123:13-63
 	android:theme
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:129:13-44
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:125:13-44
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:126:13-39
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:122:13-39
 activity#com.ir.hodicohiff.StationsPage
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:132:9-139:20
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:128:9-135:20
 	android:label
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:134:13-66
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:130:13-66
 	android:parentActivityName
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:135:13-51
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:131:13-51
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:133:13-41
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:129:13-41
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:136:13-138:62
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:132:13-134:62
 	android:value
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:138:17-59
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:134:17-59
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:137:17-63
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:133:17-63
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:141:9-150:20
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:137:9-146:20
 	android:exported
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:143:13-36
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:139:13-36
 	android:permission
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:144:13-73
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:140:13-73
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:142:13-66
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:138:13-66
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.ir.hodicohiff
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:145:13-149:29
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:141:13-145:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:146:17-81
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:142:17-81
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:146:25-78
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:142:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:147:17-86
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:143:17-86
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:147:25-83
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:143:25-83
 category#com.ir.hodicohiff
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:148:17-62
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:144:17-62
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:148:27-59
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:144:27-59
 service#Listeners.MyGcmListenerService
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:151:9-157:19
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:147:9-153:19
 	android:exported
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:153:13-37
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:149:13-37
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:152:13-58
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:148:13-58
 intent-filter#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:154:13-156:29
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:150:13-152:29
 service#Listeners.MyInstanceIDListenerService
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:158:9-164:19
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:154:9-160:19
 	android:exported
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:160:13-37
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:156:13-37
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:159:13-65
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:155:13-65
 intent-filter#com.google.android.gms.iid.InstanceID
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:161:13-163:29
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:157:13-159:29
 action#com.google.android.gms.iid.InstanceID
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:162:17-80
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:158:17-80
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:162:25-77
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:158:25-77
 service#Listeners.RegistrationIntentService
-ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:165:9-168:19
+ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:161:9-164:19
 	android:exported
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:167:13-37
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:163:13-37
 	android:name
-		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:166:13-63
+		ADDED from /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/AndroidManifest.xml:162:13-63
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.6.2/AndroidManifest.xml:19:9-172
 	android:exported

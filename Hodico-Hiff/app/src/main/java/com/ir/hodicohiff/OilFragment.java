@@ -70,7 +70,7 @@ public class OilFragment extends Fragment {
 
 				mTools.hideSoftInput();
 				// On button click show datepicker dialog
-				//getActivity().showDialog(DATE_PICKER_ID);
+				getActivity().showDialog(DATE_PICKER_ID);
 
 			}
 

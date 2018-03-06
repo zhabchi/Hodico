@@ -38,18 +38,21 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
         android:orientation="horizontal"
-        tools:context=".OilFragment" >
+        tools:context=".OilFragment">
+
 
         <Button
             android:id="@+id/changeDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@layout/btnchoosedate" />
+            android:layout_weight="1"
+            android:background="@drawable/btnchoosedate"
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -106,10 +109,10 @@
 
     <Button
         android:id="@+id/btnReminder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="40dp"
-        android:background="@layout/btnsetreminder" />
+        android:background="@drawable/btnsetreminder"
+        android:text="" />
 
 </LinearLayout>

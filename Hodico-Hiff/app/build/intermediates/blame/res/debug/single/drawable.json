@@ -28,6 +28,10 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.6.2/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/btnsetreminder.xml",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/btnsetreminder.xml"
+    },
+    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/hodico.png",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/hodico.png"
     },
@@ -130,6 +134,10 @@
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_oil.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_oil.xml"
+    },
+    {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_reminder.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_reminder.png"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_search_map.xml",
@@ -244,6 +252,10 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/btnchoosedate.xml",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/btnchoosedate.xml"
+    },
+    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
     },
@@ -272,6 +284,10 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_map_unselected.xml"
     },
     {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_reminder_selected.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_reminder_selected.png"
+    },
+    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/gradient_bg_hover.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/gradient_bg_hover.xml"
     },
@@ -288,12 +304,20 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/sayaratakhd.png"
     },
     {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_choose_date_selected.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_choose_date_selected.png"
+    },
+    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/list_selector.xml",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/list_selector.xml"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/setreminder_pressed.png",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/setreminder_pressed.png"
+    },
+    {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/ic_choose_date.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/src/main/res/drawable/ic_choose_date.png"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
