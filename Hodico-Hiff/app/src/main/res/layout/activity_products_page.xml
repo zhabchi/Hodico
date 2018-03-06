@@ -156,7 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:background="@layout/btnsubmit" />
+            android:background="@drawable/btnsubmit" />
 
         <TextView
             android:id="@+id/textView1"
