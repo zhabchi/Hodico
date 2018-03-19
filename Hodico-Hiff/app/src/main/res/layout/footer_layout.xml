@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/footer"
     android:layout_width="match_parent"
-    android:layout_alignParentBottom="true"
     android:layout_height="75dp"
+    android:layout_alignParentBottom="true"
     android:layout_alignParentEnd="true"
 
     android:layout_margin="5dp"
-    android:elevation="15dp"
     android:gravity="center">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/footershape">
+        android:background="@drawable/footershape"
+        android:elevation="15dp">
 
         <TextView
             android:id="@+id/textView"
@@ -23,10 +23,11 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:autoLink="web"
+            android:elevation="16dp"
             android:paddingLeft="15dp"
+            android:text="www.hiflb.com"
             android:textColor="@color/White"
-            android:textColorLink="@color/White"
-            android:text="www.hiflb.com" />
+            android:textColorLink="@color/White" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -34,7 +35,8 @@
         android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="30dp"
-        android:background="@drawable/footershape"></RelativeLayout>
+        android:background="@drawable/footershape"
+        android:elevation="15dp"></RelativeLayout>
 
 </RelativeLayout>
 
