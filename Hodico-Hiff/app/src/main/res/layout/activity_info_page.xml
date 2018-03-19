@@ -56,14 +56,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Queen&apos;s Plaza Center, Bloc C, 7th floor" />
+                android:text="Grey Center, 2nd floor" />
 
             <TextView
                 android:id="@+id/tvA2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Boulevard Sin El Fil, Bauchrieh," />
+                android:text="Boulevard Sin El Fil," />
 
             <TextView
                 android:id="@+id/tvA3"
