@@ -73,11 +73,7 @@
             android:label="@string/title_activity_products_page"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".StationsMapFragment"
-            android:label="@string/title_activity_stations_page"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
+
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -88,31 +84,14 @@
 
 
 
-        <activity
-            android:name=".SearchStationsFragment"
-            android:label="@string/title_activity_search_stations_fragment"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
+
         <activity
             android:name=".CarPage"
             android:label="@string/title_activity_car_page"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".TaxFragment"
-            android:label="@string/title_activity_tax_fragment"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".OilFragment"
-            android:label="@string/title_activity_oil_fragement"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".TripCostFragment"
-            android:label="@string/title_activity_trip_cost_fragment"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
+
+
         <activity
             android:name=".MapActivity"
             android:label="@string/title_activity_map"
@@ -134,7 +113,7 @@
                 android:value="com.ir.hodicohiff.MenuPage" />
         </activity>
 
-        <receiver
+      <!--  <receiver
             android:name="com.google.android.gms.gcm.GcmReceiver"
             android:exported="true"
             android:permission="com.google.android.c2dm.permission.SEND" >
@@ -161,7 +140,7 @@
         <service
             android:name="Listeners.RegistrationIntentService"
             android:exported="false">
-        </service>
+        </service>-->
 
     </application>
 
