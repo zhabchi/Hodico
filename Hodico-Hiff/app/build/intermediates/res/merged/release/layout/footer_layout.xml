@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/footer"
     android:layout_width="match_parent"
-    android:layout_height="56dp"
+    android:layout_height="75dp"
     android:layout_alignParentBottom="true"
-    android:background="@drawable/ic_footer"
-    android:gravity="center">
+    android:layout_alignParentEnd="true"
+
+    android:layout_margin="2dp"
+    android:gravity="center"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footershape"
+        android:elevation="15dp">
+
+        <TextView
+            android:id="@+id/linkhodico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:autoLink="web"
+            android:elevation="16dp"
+            android:paddingLeft="15dp"
+            android:text="www.hodico.com"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textColorLink="@color/White" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/footershape"
+        android:elevation="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroundroundedwhite"
+            android:elevation="16dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_hodico_logo" />
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
+
+
+
+
+
+

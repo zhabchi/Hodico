@@ -87,10 +87,10 @@ public class TripCostFragment extends Fragment {
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_UP) {
 					Intent i = new Intent(getContext(), MapActivity.class);
-					// i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+					i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 					etSource.setInputType(InputType.TYPE_NULL); // disable soft
 																// input
-					// etSource.onTouchEvent(event); // call native handler
+					etSource.onTouchEvent(event); // call native handler
 					etSource.setFocusable(false);
 					startActivityForResult(i, 1);
 				}

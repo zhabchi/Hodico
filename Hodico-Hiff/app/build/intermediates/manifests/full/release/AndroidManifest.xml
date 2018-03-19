@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ir.hodicohiff"
-    android:versionCode="14"
+    android:versionCode="16"
     android:versionName="1.3" >
 
     <uses-sdk
@@ -78,18 +78,26 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBeKa7JOHnoS2CbKPJOsuXbwResFuXTLw8" />
+            android:value="AIzaSyDcCVzhmZhnkVNrI9gXarkIxR29QzYsSiA" />
 
         <activity
             android:name="com.ir.hodicohiff.CarPage"
             android:label="@string/title_activity_car_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ir.hodicohiff.MenuPage" />
+        </activity>
         <activity
             android:name="com.ir.hodicohiff.MapActivity"
             android:label="@string/title_activity_map"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ir.hodicohiff.MenuPage" />
+        </activity>
         <activity
             android:name="com.ir.hodicohiff.PricesPage"
             android:label="@string/title_activity_prices_page"

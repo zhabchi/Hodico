@@ -9,7 +9,7 @@ android {
         applicationId "com.ir.hodicohiff"
         minSdkVersion 19
         targetSdkVersion 23
-        versionCode 14
+        versionCode 16
     }
     buildTypes {
         release {
@@ -18,6 +18,9 @@ android {
         }
     }
     productFlavors {
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
     }
 }
 

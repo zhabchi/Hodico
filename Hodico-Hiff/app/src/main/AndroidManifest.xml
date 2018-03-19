@@ -80,7 +80,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBeKa7JOHnoS2CbKPJOsuXbwResFuXTLw8" />
+            android:value="AIzaSyDcCVzhmZhnkVNrI9gXarkIxR29QzYsSiA" />
 
 
 
@@ -89,14 +89,23 @@
             android:name=".CarPage"
             android:label="@string/title_activity_car_page"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ir.hodicohiff.MenuPage" />
+
+        </activity>
 
 
         <activity
             android:name=".MapActivity"
             android:label="@string/title_activity_map"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ir.hodicohiff.MenuPage" />
+        </activity>
         <activity
             android:name=".PricesPage"
             android:label="@string/title_activity_prices_page"

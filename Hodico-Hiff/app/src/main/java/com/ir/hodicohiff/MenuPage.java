@@ -28,7 +28,7 @@ import com.google.android.gms.common.GoogleApiAvailability;
 public class MenuPage extends Activity {
 
 	private ImageView imgPoster1, imgPoster2, imgPoster3, imgPoster4,
-			imgPoster5, imgPoster6, imgPoster7;
+			imgPoster5, imgPoster6, imgPoster7,hodicologo;
 	private Button btnStart;
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 	//private TextView tvurl;

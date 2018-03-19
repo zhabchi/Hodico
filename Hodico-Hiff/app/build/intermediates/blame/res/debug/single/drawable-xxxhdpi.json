@@ -16,6 +16,10 @@
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_mechanic_selected.png"
     },
     {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_hif_logo.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_hif_logo.png"
+    },
+    {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_mechanic_unselected.png",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_mechanic_unselected.png"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_call_ip6s.png",
         "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_call_ip6s.png"
+    },
+    {
+        "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_hodico_logo.png",
+        "source": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_hodico_logo.png"
     },
     {
         "merged": "/Users/ziadh/Desktop/Projects/Android Projects/Hodico/Hodico-Hiff/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_email_ip6s.png",

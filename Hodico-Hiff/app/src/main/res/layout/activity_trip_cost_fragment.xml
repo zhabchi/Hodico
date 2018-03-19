@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TripCostFragment" >
+    tools:context=".TripCostFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        tools:context=".TripCostFragment" >
+        tools:context=".TripCostFragment">
 
         <TextView
             android:id="@+id/txtSource"
@@ -28,8 +28,7 @@
             android:layout_marginTop="25dp"
             android:layout_toRightOf="@+id/txtSource"
             android:ems="10"
-            android:inputType="number" >
-        </EditText>
+            android:inputType="number"></EditText>
 
         <ImageButton
             android:id="@+id/FromMyLocation"
@@ -59,8 +58,7 @@
             android:layout_marginTop="25dp"
             android:layout_toRightOf="@+id/txtDestination"
             android:ems="10"
-            android:inputType="number" >
-        </EditText>
+            android:inputType="number"></EditText>
 
         <ImageButton
             android:id="@+id/ToMyLocation"
@@ -90,8 +88,7 @@
             android:layout_marginTop="25dp"
             android:layout_toRightOf="@+id/txtAvgKm"
             android:ems="10"
-            android:inputType="number" >
-        </EditText>
+            android:inputType="number"></EditText>
 
         <TextView
             android:id="@+id/txtFuelType"
@@ -112,59 +109,66 @@
             android:layout_below="@+id/etAvgKm"
             android:layout_marginTop="25dp"
             android:layout_toRightOf="@+id/txtFuelType" />
+
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/btnsubmit" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        tools:context=".TripCostFragment" >
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txtLiters"
+        <Button
+            android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Liters needed : "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_gravity="center"
+            android:background="@drawable/btnsubmit" />
 
-        <TextView
-            android:id="@+id/txtLitersRes"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 Liters"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:context=".TripCostFragment">
+
+            <TextView
+                android:id="@+id/txtLiters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liters needed : "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLitersRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Liters"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:context=".TripCostFragment">
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost : "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtCostRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 LL"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        tools:context=".TripCostFragment" >
-
-        <TextView
-            android:id="@+id/txtCost"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cost : "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <TextView
-            android:id="@+id/txtCostRes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0 LL"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
-
 </LinearLayout>

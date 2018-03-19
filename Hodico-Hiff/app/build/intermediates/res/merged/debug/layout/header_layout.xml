@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/header"
     android:layout_width="match_parent"
-    android:layout_height="56dp"
+    android:layout_height="75dp"
     android:layout_alignParentTop="true"
-    android:background="@drawable/ic_header"
+    android:layout_margin="5dp"
+
+    android:elevation="15dp"
     android:gravity="center">
 
+    <RelativeLayout
+        android:id="@+id/headerbanner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/headershape"
+        android:elevation="15dp"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/headericon"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/headershape"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/hodicologo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroundroundedwhite"
+            android:elevation="15dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_hif_logo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/linkhif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:autoLink="web"
+        android:elevation="16dp"
+        android:paddingBottom="10dp"
+        android:textAllCaps="true"
+        android:paddingRight="15dp"
+        android:text="www.hiflb.com"
+        android:textColor="@color/White"
+        android:textColorLink="@color/White" />
 </RelativeLayout>
