@@ -11,13 +11,31 @@
     android:gravity="center">
 
     <RelativeLayout
+        android:id="@+id/headerbanner"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@drawable/headershape"></RelativeLayout>
 
+
     <RelativeLayout
+        android:id="@+id/headericon"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:layout_marginLeft="30dp"
         android:background="@drawable/headershape"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:autoLink="web"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:text="www.hodico.com"
+        android:textColor="@color/White"
+        android:textColorLink="@color/White" />
 </RelativeLayout>
