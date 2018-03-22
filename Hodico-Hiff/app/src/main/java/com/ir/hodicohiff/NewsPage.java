@@ -45,7 +45,7 @@ public class NewsPage extends Activity  {
 
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(NewsPage.this);
-		mTools.setHeader(R.drawable.akhbarhd);
+
 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_news_page);

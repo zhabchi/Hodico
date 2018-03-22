@@ -21,7 +21,7 @@ public class InfoPage extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(InfoPage.this);
-		mTools.setHeader(R.drawable.ettisalhd);
+		//mTools.setHeader(R.drawable.ettisalhd);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.activity_info_page);

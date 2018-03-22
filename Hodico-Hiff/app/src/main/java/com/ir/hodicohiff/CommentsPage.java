@@ -50,7 +50,7 @@ public class CommentsPage extends Activity {
 		super.onCreate(savedInstanceState);
 		// requestWindowFeature(Window.FEATURE_NO_TITLE);
 		mTools = new Tools(CommentsPage.this);
-		mTools.setHeader(R.drawable.ta3li2akhd);
+		//mTools.setHeader(R.drawable.ta3li2akhd);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.activity_comments_page);

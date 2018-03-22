@@ -49,7 +49,7 @@ public class TaxFragment extends Fragment {
 
 		//mTools = new Tools(getActivity());
         mTools = new Tools(getContext());
-        mTools.setHeader(R.drawable.sayaratakhd);
+        //mTools.setHeader(R.drawable.sayaratakhd);
 		btnSubmit = (Button) v.findViewById(R.id.btnSubmit);
 
 		//etPlateNb = (EditText) v.findViewById(R.id.etCarPlate);

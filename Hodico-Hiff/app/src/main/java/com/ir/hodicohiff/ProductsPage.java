@@ -50,7 +50,7 @@ public class ProductsPage extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mTools = new Tools(ProductsPage.this);
-		mTools.setHeader(R.drawable.wasselhd);
+		//mTools.setHeader(R.drawable.wasselhd);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_products_page);
 

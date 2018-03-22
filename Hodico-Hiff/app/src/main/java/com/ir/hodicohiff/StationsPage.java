@@ -75,7 +75,7 @@ public class StationsPage extends Activity {
         final Tools mTools;
         TabLayout mTabs;
         mTools = new Tools(StationsPage.this);
-        mTools.setHeader(R.drawable.ma7atatakhd);
+       // mTools.setHeader(R.drawable.ma7atatakhd);
         mWeb = new WebHttpRequest(StationsPage.this, WebHttpRequest.WEB_STATIONS,
                 new OnTaskCompleted() {
 

@@ -60,7 +60,7 @@ public class CarPage extends Activity implements ActionBar.TabListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		mTools = new Tools(CarPage.this);
-		mTools.setHeader(R.drawable.sayaratakhd);
+		//mTools.setHeader(R.drawable.sayaratakhd);
 
 		setContentView(R.layout.activity_car_page);
 
